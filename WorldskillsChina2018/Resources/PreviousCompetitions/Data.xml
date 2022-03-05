@@ -1,0 +1,217 @@
+<Competitions>
+  <Competition Number="43" Year="2015">
+    <City>São Paulo</City>
+    <Country>Brazil</Country>
+    <MemberNumber>78</MemberNumber>
+  </Competition>
+  <Competition Number="42" Year="2013">
+    <City>Leipzig</City>
+    <Country>Germany</Country>
+    <MemberNumber>60</MemberNumber>
+  </Competition>
+  <Competition Number="41" Year="2011">
+    <City>London</City>
+    <Country>United Kingdom</Country>
+    <MemberNumber>50</MemberNumber>
+  </Competition>
+  <Competition Number="40" Year="2009">
+    <City>Calgary</City>
+    <Country>Canada </Country>
+    <MemberNumber>48</MemberNumber>
+  </Competition>
+  <Competition Number="39" Year="2007">
+    <City>Shizuoka</City>
+    <Country>Japan</Country>
+    <MemberNumber>49</MemberNumber>
+  </Competition>
+  <Competition Number="38" Year="2005">
+    <City>Helsinki</City>
+    <Country>Finland </Country>
+    <MemberNumber>45</MemberNumber>
+  </Competition>
+  <Competition Number="37" Year="2003">
+    <City>St Gallen</City>
+    <Country>Switzerland </Country>
+    <MemberNumber>45</MemberNumber>
+  </Competition>
+  <Competition Number="36" Year="2001">
+    <City>Seoul</City>
+    <Country>Korea </Country>
+    <MemberNumber>45</MemberNumber>
+  </Competition>
+  <Competition Number="35" Year="1999">
+    <City>Montreal</City>
+    <Country>Canada</Country>
+    <MemberNumber>45</MemberNumber>
+  </Competition>
+  <Competition Number="34" Year="1997">
+    <City>St. Gallen</City>
+    <Country>Switzerland</Country>
+    <MemberNumber>45</MemberNumber>
+  </Competition>
+  <Competition Number="33" Year="1995">
+    <City>Lyon</City>
+    <Country>France</Country>
+    <MemberNumber>45</MemberNumber>
+  </Competition>
+  <Competition Number="32" Year="1993">
+    <City>Taipei</City>
+    <Country>Chinese Taipei</Country>
+    <MemberNumber>45</MemberNumber>
+  </Competition>
+  <Competition Number="31" Year="1991">
+    <City>Amsterdam</City>
+    <Country>Netherlands</Country>
+    <MemberNumber>44</MemberNumber>
+  </Competition>
+  <Competition Number="30" Year="1989">
+    <City>Birmingham</City>
+    <Country>United Kingdom</Country>
+    <MemberNumber>44</MemberNumber>
+  </Competition>
+  <Competition Number="29" Year="1988">
+    <City>Sydney</City>
+    <Country>Australia</Country>
+    <MemberNumber>44</MemberNumber>
+  </Competition>
+  <Competition Number="28" Year="1985">
+    <City>Osaka</City>
+    <Country>Japan</Country>
+    <MemberNumber>44</MemberNumber>
+  </Competition>
+  <Competition Number="27" Year="1983">
+    <City>Linz</City>
+    <Country>Austria</Country>
+    <MemberNumber>44</MemberNumber>
+  </Competition>
+  <Competition Number="26" Year="1981">
+    <City>Atlanta</City>
+    <Country>USA</Country>
+    <MemberNumber>44</MemberNumber>
+  </Competition>
+  <Competition Number="25" Year="1979">
+    <City>Cork</City>
+    <Country>Ireland</Country>
+    <MemberNumber>44</MemberNumber>
+  </Competition>
+  <Competition Number="24" Year="1978">
+    <City>Busan</City>
+    <Country>Korea</Country>
+    <MemberNumber>44</MemberNumber>
+  </Competition>
+  <Competition Number="23" Year="1977">
+    <City>Utrecht</City>
+    <Country>Netherlands</Country>
+    <MemberNumber>30</MemberNumber>
+  </Competition>
+  <Competition Number="22" Year="1975">
+    <City>Madrid</City>
+    <Country>Spain</Country>
+    <MemberNumber>30</MemberNumber>
+  </Competition>
+  <Competition Number="21" Year="1973">
+    <City>Munich</City>
+    <Country>Germany</Country>
+    <MemberNumber>30</MemberNumber>
+  </Competition>
+  <Competition Number="20" Year="1971">
+    <City>Gijón</City>
+    <Country>Spain</Country>
+    <MemberNumber>30</MemberNumber>
+  </Competition>
+  <Competition Number="19" Year="1970">
+    <City>Tokyo</City>
+    <Country>Japan</Country>
+    <MemberNumber>30</MemberNumber>
+  </Competition>
+  <Competition Number="18" Year="1969">
+    <City>Brussels</City>
+    <Country>Belgium</Country>
+    <MemberNumber>30</MemberNumber>
+  </Competition>
+  <Competition Number="17" Year="1968">
+    <City>Bern</City>
+    <Country>Switzerland</Country>
+    <MemberNumber>30</MemberNumber>
+  </Competition>
+  <Competition Number="16" Year="1967">
+    <City>Madrid</City>
+    <Country>Spain</Country>
+    <MemberNumber>30</MemberNumber>
+  </Competition>
+  <Competition Number="15" Year="1966">
+    <City>Utrecht</City>
+    <Country>Netherlands</Country>
+    <MemberNumber>10</MemberNumber>
+  </Competition>
+  <Competition Number="14" Year="1965">
+    <City>Glasgow</City>
+    <Country>United Kingdom</Country>
+    <MemberNumber>8</MemberNumber>
+  </Competition>
+  <Competition Number="13" Year="1964">
+    <City>Lisbon</City>
+    <Country>Portugal</Country>
+    <MemberNumber>7</MemberNumber>
+  </Competition>
+  <Competition Number="12" Year="1963">
+    <City>Dublin</City>
+    <Country>Ireland</Country>
+    <MemberNumber>7</MemberNumber>
+  </Competition>
+  <Competition Number="11" Year="1962">
+    <City>Gijón</City>
+    <Country>Spain</Country>
+    <MemberNumber>7</MemberNumber>
+  </Competition>
+  <Competition Number="10" Year="1961">
+    <City>Duisburg</City>
+    <Country>Germany</Country>
+    <MemberNumber>6</MemberNumber>
+  </Competition>
+  <Competition Number="9" Year="1960">
+    <City>Barcelona</City>
+    <Country>Spain</Country>
+    <MemberNumber>6</MemberNumber>
+  </Competition>
+  <Competition Number="8" Year="1959">
+    <City>Modena</City>
+    <Country>Italy</Country>
+    <MemberNumber>5</MemberNumber>
+  </Competition>
+  <Competition Number="7" Year="1958">
+    <City>Brussels</City>
+    <Country>Belgium</Country>
+    <MemberNumber>5</MemberNumber>
+  </Competition>
+  <Competition Number="6" Year="1957">
+    <City>Madrid</City>
+    <Country>Spain</Country>
+    <MemberNumber>4</MemberNumber>
+  </Competition>
+  <Competition Number="5" Year="1956">
+    <City>Madrid</City>
+    <Country>Spain</Country>
+    <MemberNumber>4</MemberNumber>
+  </Competition>
+  <Competition Number="4" Year="1955">
+    <City>Madrid</City>
+    <Country>Spain</Country>
+    <MemberNumber>2</MemberNumber>
+  </Competition>
+  <Competition Number="3" Year="1953">
+    <City>Madrid</City>
+    <Country>Spain</Country>
+    <MemberNumber>2</MemberNumber>
+  </Competition>
+  <Competition Number="2" Year="1951">
+    <City>Madrid</City>
+    <Country>Spain</Country>
+    <MemberNumber>1</MemberNumber>
+  </Competition>
+  <Competition Number="1" Year="1950">
+    <City>Madrid</City>
+    <Country>Spain</Country>
+    <MemberNumber>1</MemberNumber>
+  </Competition>
+</Competitions>

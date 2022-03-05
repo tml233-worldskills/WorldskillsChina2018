@@ -1,0 +1,3 @@
+The skill of Industrial Control covers elements from electrical installation and automation installation. However, the requirements are now leaning more and more towards automation installation. There are a wide range of technical skills required from the practitioner, including installation of conduits, cables, instruments, devices and control centres. The practitioner will also need to design circuits and program Programmable Logic Controllers, parameterize bus systems and configure Human Machine Interfaces.
+
+ A key skill of the practitioner is troubleshooting, identifying problems during installation or remedying problems with an established plant.
