@@ -36,6 +36,7 @@
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -47,40 +48,76 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Forms\AboutShanghai.cs">
+    <Compile Include="Forms\ModuleA\AboutShanghai.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\AboutShanghai.Designer.cs">
+    <Compile Include="Forms\ModuleA\AboutShanghai.Designer.cs">
       <DependentUpon>AboutShanghai.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\AboutWorldskillsChina.cs">
+    <Compile Include="Forms\ModuleA\AboutWorldskillsChina.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\AboutWorldskillsChina.Designer.cs">
+    <Compile Include="Forms\ModuleA\AboutWorldskillsChina.Designer.cs">
       <DependentUpon>AboutWorldskillsChina.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\CompetitionSkills.cs">
+    <Compile Include="Forms\ModuleA\CompetitionSkills.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\CompetitionSkills.Designer.cs">
+    <Compile Include="Forms\ModuleA\CompetitionSkills.Designer.cs">
       <DependentUpon>CompetitionSkills.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\PreviousCompetitions.cs">
+    <Compile Include="Forms\ModuleB\AdministratorMenu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\PreviousCompetitions.Designer.cs">
+    <Compile Include="Forms\ModuleB\AdministratorMenu.Designer.cs">
+      <DependentUpon>AdministratorMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ModuleB\Competitor\MyProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ModuleB\Competitor\MyProfile.Designer.cs">
+      <DependentUpon>MyProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ModuleB\JudgerMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ModuleB\JudgerMenu.Designer.cs">
+      <DependentUpon>JudgerMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ModuleB\CoordinatorMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ModuleB\CoordinatorMenu.Designer.cs">
+      <DependentUpon>CoordinatorMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ModuleB\CompetitorMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ModuleB\CompetitorMenu.Designer.cs">
+      <DependentUpon>CompetitorMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ModuleB\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ModuleB\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ModuleA\PreviousCompetitions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ModuleA\PreviousCompetitions.Designer.cs">
       <DependentUpon>PreviousCompetitions.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\HistoryOfWorldskills.cs">
+    <Compile Include="Forms\ModuleA\HistoryOfWorldskills.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\HistoryOfWorldskills.Designer.cs">
+    <Compile Include="Forms\ModuleA\HistoryOfWorldskills.Designer.cs">
       <DependentUpon>HistoryOfWorldskills.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\AboutWorldskills.cs">
+    <Compile Include="Forms\ModuleA\AboutWorldskills.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\AboutWorldskills.Designer.cs">
+    <Compile Include="Forms\ModuleA\AboutWorldskills.Designer.cs">
       <DependentUpon>AboutWorldskills.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\MainScreen.cs">
@@ -92,22 +129,40 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utils.cs" />
-    <EmbeddedResource Include="Forms\AboutShanghai.resx">
+    <EmbeddedResource Include="Forms\ModuleA\AboutShanghai.resx">
       <DependentUpon>AboutShanghai.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\AboutWorldskillsChina.resx">
+    <EmbeddedResource Include="Forms\ModuleA\AboutWorldskillsChina.resx">
       <DependentUpon>AboutWorldskillsChina.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\CompetitionSkills.resx">
+    <EmbeddedResource Include="Forms\ModuleA\CompetitionSkills.resx">
       <DependentUpon>CompetitionSkills.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\PreviousCompetitions.resx">
+    <EmbeddedResource Include="Forms\ModuleB\AdministratorMenu.resx">
+      <DependentUpon>AdministratorMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ModuleB\Competitor\MyProfile.resx">
+      <DependentUpon>MyProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ModuleB\JudgerMenu.resx">
+      <DependentUpon>JudgerMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ModuleB\CoordinatorMenu.resx">
+      <DependentUpon>CoordinatorMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ModuleB\CompetitorMenu.resx">
+      <DependentUpon>CompetitorMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ModuleB\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ModuleA\PreviousCompetitions.resx">
       <DependentUpon>PreviousCompetitions.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\HistoryOfWorldskills.resx">
+    <EmbeddedResource Include="Forms\ModuleA\HistoryOfWorldskills.resx">
       <DependentUpon>HistoryOfWorldskills.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\AboutWorldskills.resx">
+    <EmbeddedResource Include="Forms\ModuleA\AboutWorldskills.resx">
       <DependentUpon>AboutWorldskills.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MainScreen.resx">
@@ -183,6 +238,7 @@
     <None Include="Resources\3.png" />
     <None Include="Resources\1.png" />
     <None Include="Resources\download.png" />
+    <None Include="Resources\NoPicture.jpg" />
     <Content Include="Resources\PreviousCompetitions\Data.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

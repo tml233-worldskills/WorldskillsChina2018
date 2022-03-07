@@ -28,13 +28,13 @@
 			this.toolStripStatusTime = new System.Windows.Forms.ToolStripStatusLabel();
 			this.timerBottom = new System.Windows.Forms.Timer(this.components);
 			this.panel1 = new System.Windows.Forms.Panel();
+			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			this.lblDate = new System.Windows.Forms.Label();
 			this.label1 = new System.Windows.Forms.Label();
 			this.btn0 = new System.Windows.Forms.Button();
 			this.btn1 = new System.Windows.Forms.Button();
 			this.btn2 = new System.Windows.Forms.Button();
 			this.btnLogin = new System.Windows.Forms.Button();
-			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			this.statusStrip1.SuspendLayout();
 			this.panel1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -55,7 +55,8 @@
 			// toolStripStatusTime
 			// 
 			this.toolStripStatusTime.AutoSize = false;
-			this.toolStripStatusTime.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+			this.toolStripStatusTime.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(149)))), ((int)(((byte)(194)))));
+			this.toolStripStatusTime.Font = new System.Drawing.Font("Calibri", 12F);
 			this.toolStripStatusTime.ForeColor = System.Drawing.Color.White;
 			this.toolStripStatusTime.Name = "toolStripStatusTime";
 			this.toolStripStatusTime.Size = new System.Drawing.Size(754, 30);
@@ -70,7 +71,7 @@
 			// 
 			// panel1
 			// 
-			this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(149)))), ((int)(((byte)(194)))));
 			this.panel1.Controls.Add(this.pictureBox1);
 			this.panel1.Controls.Add(this.lblDate);
 			this.panel1.Controls.Add(this.label1);
@@ -80,9 +81,19 @@
 			this.panel1.Size = new System.Drawing.Size(769, 181);
 			this.panel1.TabIndex = 1;
 			// 
+			// pictureBox1
+			// 
+			this.pictureBox1.Image = global::WorldskillsChina2018.Properties.Resources.logo_color_bg_white;
+			this.pictureBox1.Location = new System.Drawing.Point(55, 34);
+			this.pictureBox1.Name = "pictureBox1";
+			this.pictureBox1.Size = new System.Drawing.Size(145, 119);
+			this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+			this.pictureBox1.TabIndex = 2;
+			this.pictureBox1.TabStop = false;
+			// 
 			// lblDate
 			// 
-			this.lblDate.Font = new System.Drawing.Font("微软雅黑", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+			this.lblDate.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lblDate.ForeColor = System.Drawing.Color.Silver;
 			this.lblDate.Location = new System.Drawing.Point(223, 111);
 			this.lblDate.Name = "lblDate";
@@ -94,17 +105,17 @@
 			// label1
 			// 
 			this.label1.AutoSize = true;
-			this.label1.Font = new System.Drawing.Font("微软雅黑", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+			this.label1.Font = new System.Drawing.Font("Calibri", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label1.Location = new System.Drawing.Point(220, 25);
 			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(407, 78);
+			this.label1.Size = new System.Drawing.Size(408, 84);
 			this.label1.TabIndex = 0;
 			this.label1.Text = "Skills Cometition\r\nManagement System 2018";
 			this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
 			// 
 			// btn0
 			// 
-			this.btn0.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+			this.btn0.Font = new System.Drawing.Font("Calibri", 14F);
 			this.btn0.Location = new System.Drawing.Point(262, 204);
 			this.btn0.Name = "btn0";
 			this.btn0.Size = new System.Drawing.Size(280, 75);
@@ -115,7 +126,7 @@
 			// 
 			// btn1
 			// 
-			this.btn1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+			this.btn1.Font = new System.Drawing.Font("Calibri", 14F);
 			this.btn1.Location = new System.Drawing.Point(262, 295);
 			this.btn1.Name = "btn1";
 			this.btn1.Size = new System.Drawing.Size(280, 75);
@@ -126,7 +137,7 @@
 			// 
 			// btn2
 			// 
-			this.btn2.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+			this.btn2.Font = new System.Drawing.Font("Calibri", 14F);
 			this.btn2.Location = new System.Drawing.Point(262, 386);
 			this.btn2.Name = "btn2";
 			this.btn2.Size = new System.Drawing.Size(280, 75);
@@ -137,23 +148,14 @@
 			// 
 			// btnLogin
 			// 
-			this.btnLogin.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+			this.btnLogin.Font = new System.Drawing.Font("Calibri", 14F);
 			this.btnLogin.Location = new System.Drawing.Point(616, 438);
 			this.btnLogin.Name = "btnLogin";
 			this.btnLogin.Size = new System.Drawing.Size(141, 39);
 			this.btnLogin.TabIndex = 5;
 			this.btnLogin.Text = "Login";
 			this.btnLogin.UseVisualStyleBackColor = true;
-			// 
-			// pictureBox1
-			// 
-			this.pictureBox1.Image = global::WorldskillsChina2018.Properties.Resources.logo_color_bg_white;
-			this.pictureBox1.Location = new System.Drawing.Point(55, 34);
-			this.pictureBox1.Name = "pictureBox1";
-			this.pictureBox1.Size = new System.Drawing.Size(145, 119);
-			this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-			this.pictureBox1.TabIndex = 2;
-			this.pictureBox1.TabStop = false;
+			this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
 			// 
 			// MainScreen
 			// 
@@ -170,7 +172,7 @@
 			this.MaximizeBox = false;
 			this.Name = "MainScreen";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-			this.Text = "MainScreen";
+			this.Text = "Main Screen";
 			this.Load += new System.EventHandler(this.MainScreen_Load);
 			this.statusStrip1.ResumeLayout(false);
 			this.statusStrip1.PerformLayout();

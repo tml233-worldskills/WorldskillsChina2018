@@ -1,5 +1,5 @@
 ﻿namespace WorldskillsChina2018 {
-	partial class CompetitionSkills {
+	partial class AboutWorldskills {
 		/// <summary>
 		/// Required designer variable.
 		/// </summary>
@@ -31,9 +31,10 @@
 			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			this.btnBack = new System.Windows.Forms.Button();
 			this.label1 = new System.Windows.Forms.Label();
+			this.btn0 = new System.Windows.Forms.Button();
+			this.btn1 = new System.Windows.Forms.Button();
+			this.btn2 = new System.Windows.Forms.Button();
 			this.label2 = new System.Windows.Forms.Label();
-			this.treeView1 = new System.Windows.Forms.TreeView();
-			this.textBox1 = new System.Windows.Forms.TextBox();
 			this.statusStrip1.SuspendLayout();
 			this.panel1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -41,7 +42,7 @@
 			// 
 			// statusStrip1
 			// 
-			this.statusStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(82)))), ((int)(((byte)(82)))));
+			this.statusStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(149)))), ((int)(((byte)(194)))));
 			this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusTime});
 			this.statusStrip1.Location = new System.Drawing.Point(0, 486);
@@ -54,7 +55,7 @@
 			// toolStripStatusTime
 			// 
 			this.toolStripStatusTime.AutoSize = false;
-			this.toolStripStatusTime.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+			this.toolStripStatusTime.Font = new System.Drawing.Font("Calibri", 12F);
 			this.toolStripStatusTime.ForeColor = System.Drawing.Color.White;
 			this.toolStripStatusTime.Name = "toolStripStatusTime";
 			this.toolStripStatusTime.Size = new System.Drawing.Size(754, 30);
@@ -71,7 +72,7 @@
 			// 
 			this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-			this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(149)))), ((int)(((byte)(194)))));
 			this.panel1.Controls.Add(this.pictureBox1);
 			this.panel1.Controls.Add(this.btnBack);
 			this.panel1.Controls.Add(this.label1);
@@ -93,7 +94,7 @@
 			// 
 			// btnBack
 			// 
-			this.btnBack.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+			this.btnBack.Font = new System.Drawing.Font("Calibri", 12F);
 			this.btnBack.ForeColor = System.Drawing.Color.Black;
 			this.btnBack.Location = new System.Drawing.Point(95, 9);
 			this.btnBack.Name = "btnBack";
@@ -106,57 +107,73 @@
 			// label1
 			// 
 			this.label1.AutoSize = true;
-			this.label1.Font = new System.Drawing.Font("微软雅黑", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+			this.label1.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label1.Location = new System.Drawing.Point(200, 17);
 			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(434, 31);
+			this.label1.Size = new System.Drawing.Size(402, 33);
 			this.label1.TabIndex = 0;
 			this.label1.Text = "Worldskills China Cometition 2018";
 			this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
 			// 
+			// btn0
+			// 
+			this.btn0.Font = new System.Drawing.Font("Calibri", 15F);
+			this.btn0.Location = new System.Drawing.Point(244, 158);
+			this.btn0.Name = "btn0";
+			this.btn0.Size = new System.Drawing.Size(280, 75);
+			this.btn0.TabIndex = 2;
+			this.btn0.Text = "History of Worldskills";
+			this.btn0.UseVisualStyleBackColor = true;
+			this.btn0.Click += new System.EventHandler(this.btn0_Click);
+			// 
+			// btn1
+			// 
+			this.btn1.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btn1.Location = new System.Drawing.Point(244, 249);
+			this.btn1.Name = "btn1";
+			this.btn1.Size = new System.Drawing.Size(280, 75);
+			this.btn1.TabIndex = 3;
+			this.btn1.Text = "Competition Skills";
+			this.btn1.UseVisualStyleBackColor = true;
+			this.btn1.Click += new System.EventHandler(this.btn1_Click);
+			// 
+			// btn2
+			// 
+			this.btn2.Font = new System.Drawing.Font("Calibri", 15F);
+			this.btn2.Location = new System.Drawing.Point(244, 340);
+			this.btn2.Name = "btn2";
+			this.btn2.Size = new System.Drawing.Size(280, 75);
+			this.btn2.TabIndex = 4;
+			this.btn2.Text = "Previous Competitions";
+			this.btn2.UseVisualStyleBackColor = true;
+			this.btn2.Click += new System.EventHandler(this.btn2_Click);
+			// 
 			// label2
 			// 
-			this.label2.AutoSize = true;
-			this.label2.Font = new System.Drawing.Font("微软雅黑", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-			this.label2.Location = new System.Drawing.Point(243, 74);
+			this.label2.Font = new System.Drawing.Font("Calibri", 20F);
+			this.label2.Location = new System.Drawing.Point(0, 89);
 			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(269, 38);
+			this.label2.Size = new System.Drawing.Size(769, 38);
 			this.label2.TabIndex = 7;
-			this.label2.Text = "Competition Skills";
+			this.label2.Text = "About Worldskills";
 			this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
 			// 
-			// treeView1
-			// 
-			this.treeView1.Location = new System.Drawing.Point(12, 120);
-			this.treeView1.Name = "treeView1";
-			this.treeView1.Size = new System.Drawing.Size(285, 363);
-			this.treeView1.TabIndex = 8;
-			this.treeView1.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeView1_AfterSelect);
-			// 
-			// textBox1
-			// 
-			this.textBox1.Location = new System.Drawing.Point(303, 120);
-			this.textBox1.Multiline = true;
-			this.textBox1.Name = "textBox1";
-			this.textBox1.ReadOnly = true;
-			this.textBox1.Size = new System.Drawing.Size(454, 363);
-			this.textBox1.TabIndex = 9;
-			// 
-			// CompetitionSkills
+			// AboutWorldskills
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(769, 521);
-			this.Controls.Add(this.textBox1);
-			this.Controls.Add(this.treeView1);
 			this.Controls.Add(this.label2);
+			this.Controls.Add(this.btn2);
+			this.Controls.Add(this.btn1);
+			this.Controls.Add(this.btn0);
 			this.Controls.Add(this.panel1);
 			this.Controls.Add(this.statusStrip1);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
 			this.MaximizeBox = false;
-			this.Name = "CompetitionSkills";
+			this.Name = "AboutWorldskills";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-			this.Text = "Competition Skills";
+			this.Text = "About Worldskills";
 			this.Load += new System.EventHandler(this.MainScreen_Load);
 			this.statusStrip1.ResumeLayout(false);
 			this.statusStrip1.PerformLayout();
@@ -175,10 +192,11 @@
 		private System.Windows.Forms.Timer timerBottom;
 		private System.Windows.Forms.Panel panel1;
 		private System.Windows.Forms.Label label1;
+		private System.Windows.Forms.Button btn0;
+		private System.Windows.Forms.Button btn1;
+		private System.Windows.Forms.Button btn2;
 		private System.Windows.Forms.Button btnBack;
 		private System.Windows.Forms.PictureBox pictureBox1;
 		private System.Windows.Forms.Label label2;
-		private System.Windows.Forms.TreeView treeView1;
-		private System.Windows.Forms.TextBox textBox1;
 	}
 }

@@ -44,5 +44,10 @@ namespace WorldskillsChina2018 {
 			var form = new AboutShanghai();
 			form.ShowDialog();
 		}
+
+		private void btnLogin_Click(object sender, EventArgs e) {
+			var form = new Login();
+			form.ShowDialog();
+		}
 	}
 }

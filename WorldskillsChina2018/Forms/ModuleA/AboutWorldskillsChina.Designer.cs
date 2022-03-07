@@ -63,7 +63,7 @@
 			// 
 			// statusStrip1
 			// 
-			this.statusStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(82)))), ((int)(((byte)(82)))));
+			this.statusStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(149)))), ((int)(((byte)(194)))));
 			this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusTime});
 			this.statusStrip1.Location = new System.Drawing.Point(0, 486);
@@ -76,7 +76,7 @@
 			// toolStripStatusTime
 			// 
 			this.toolStripStatusTime.AutoSize = false;
-			this.toolStripStatusTime.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+			this.toolStripStatusTime.Font = new System.Drawing.Font("Calibri", 12F);
 			this.toolStripStatusTime.ForeColor = System.Drawing.Color.White;
 			this.toolStripStatusTime.Name = "toolStripStatusTime";
 			this.toolStripStatusTime.Size = new System.Drawing.Size(754, 30);
@@ -93,7 +93,7 @@
 			// 
 			this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-			this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(149)))), ((int)(((byte)(194)))));
 			this.panel1.Controls.Add(this.pictureBox1);
 			this.panel1.Controls.Add(this.btnBack);
 			this.panel1.Controls.Add(this.label1);
@@ -115,7 +115,7 @@
 			// 
 			// btnBack
 			// 
-			this.btnBack.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+			this.btnBack.Font = new System.Drawing.Font("Calibri", 12F);
 			this.btnBack.ForeColor = System.Drawing.Color.Black;
 			this.btnBack.Location = new System.Drawing.Point(95, 9);
 			this.btnBack.Name = "btnBack";
@@ -128,33 +128,31 @@
 			// label1
 			// 
 			this.label1.AutoSize = true;
-			this.label1.Font = new System.Drawing.Font("微软雅黑", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+			this.label1.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Bold);
 			this.label1.Location = new System.Drawing.Point(200, 17);
 			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(434, 31);
+			this.label1.Size = new System.Drawing.Size(402, 33);
 			this.label1.TabIndex = 0;
 			this.label1.Text = "Worldskills China Cometition 2018";
 			this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
 			// 
 			// label2
 			// 
-			this.label2.AutoSize = true;
-			this.label2.Font = new System.Drawing.Font("微软雅黑", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-			this.label2.Location = new System.Drawing.Point(225, 77);
+			this.label2.Font = new System.Drawing.Font("Calibri", 20F);
+			this.label2.Location = new System.Drawing.Point(0, 77);
 			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(352, 38);
+			this.label2.Size = new System.Drawing.Size(769, 38);
 			this.label2.TabIndex = 7;
 			this.label2.Text = "About Worldskills China";
 			this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
 			// 
 			// label3
 			// 
-			this.label3.AutoSize = true;
-			this.label3.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+			this.label3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label3.ForeColor = System.Drawing.Color.Gray;
-			this.label3.Location = new System.Drawing.Point(103, 115);
+			this.label3.Location = new System.Drawing.Point(0, 115);
 			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(592, 42);
+			this.label3.Size = new System.Drawing.Size(769, 42);
 			this.label3.TabIndex = 8;
 			this.label3.Text = "On October 7, 2010, China is approved by the 2010 world skills organization,\r\noff" +
     "icially became the world skills 53rd members of the organization.\r\n";
@@ -163,11 +161,11 @@
 			// label4
 			// 
 			this.label4.AutoSize = true;
-			this.label4.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+			this.label4.Font = new System.Drawing.Font("Calibri", 20F);
 			this.label4.ForeColor = System.Drawing.Color.Black;
-			this.label4.Location = new System.Drawing.Point(12, 177);
+			this.label4.Location = new System.Drawing.Point(12, 166);
 			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size(212, 27);
+			this.label4.Size = new System.Drawing.Size(243, 33);
 			this.label4.TabIndex = 9;
 			this.label4.Text = "Resources Download";
 			this.label4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -185,7 +183,7 @@
 			// 
 			// btn2
 			// 
-			this.btn2.Font = new System.Drawing.Font("微软雅黑", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+			this.btn2.Font = new System.Drawing.Font("Calibri", 16F);
 			this.btn2.Location = new System.Drawing.Point(3, 185);
 			this.btn2.Name = "btn2";
 			this.btn2.Size = new System.Drawing.Size(230, 85);
@@ -196,7 +194,7 @@
 			// 
 			// btn1
 			// 
-			this.btn1.Font = new System.Drawing.Font("微软雅黑", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+			this.btn1.Font = new System.Drawing.Font("Calibri", 16F);
 			this.btn1.Location = new System.Drawing.Point(4, 94);
 			this.btn1.Name = "btn1";
 			this.btn1.Size = new System.Drawing.Size(230, 85);
@@ -207,7 +205,7 @@
 			// 
 			// btn0
 			// 
-			this.btn0.Font = new System.Drawing.Font("微软雅黑", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+			this.btn0.Font = new System.Drawing.Font("Calibri", 16F);
 			this.btn0.Location = new System.Drawing.Point(4, 3);
 			this.btn0.Name = "btn0";
 			this.btn0.Size = new System.Drawing.Size(230, 85);
@@ -239,11 +237,11 @@
 			// lbl0
 			// 
 			this.lbl0.AutoSize = true;
-			this.lbl0.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+			this.lbl0.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lbl0.ForeColor = System.Drawing.Color.Black;
-			this.lbl0.Location = new System.Drawing.Point(4, 12);
+			this.lbl0.Location = new System.Drawing.Point(4, 13);
 			this.lbl0.Name = "lbl0";
-			this.lbl0.Size = new System.Drawing.Size(212, 27);
+			this.lbl0.Size = new System.Drawing.Size(184, 24);
 			this.lbl0.TabIndex = 12;
 			this.lbl0.Text = "Resources Download";
 			this.lbl0.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -281,11 +279,11 @@
 			// lbl1
 			// 
 			this.lbl1.AutoSize = true;
-			this.lbl1.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+			this.lbl1.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lbl1.ForeColor = System.Drawing.Color.Black;
-			this.lbl1.Location = new System.Drawing.Point(4, 12);
+			this.lbl1.Location = new System.Drawing.Point(4, 13);
 			this.lbl1.Name = "lbl1";
-			this.lbl1.Size = new System.Drawing.Size(212, 27);
+			this.lbl1.Size = new System.Drawing.Size(184, 24);
 			this.lbl1.TabIndex = 12;
 			this.lbl1.Text = "Resources Download";
 			this.lbl1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -314,11 +312,11 @@
 			// lbl2
 			// 
 			this.lbl2.AutoSize = true;
-			this.lbl2.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+			this.lbl2.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lbl2.ForeColor = System.Drawing.Color.Black;
-			this.lbl2.Location = new System.Drawing.Point(4, 12);
+			this.lbl2.Location = new System.Drawing.Point(4, 13);
 			this.lbl2.Name = "lbl2";
-			this.lbl2.Size = new System.Drawing.Size(212, 27);
+			this.lbl2.Size = new System.Drawing.Size(184, 24);
 			this.lbl2.TabIndex = 12;
 			this.lbl2.Text = "Resources Download";
 			this.lbl2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -347,7 +345,7 @@
 			this.MaximizeBox = false;
 			this.Name = "AboutWorldskillsChina";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-			this.Text = "About Worldskills";
+			this.Text = "About Worldskills China";
 			this.Load += new System.EventHandler(this.MainScreen_Load);
 			this.statusStrip1.ResumeLayout(false);
 			this.statusStrip1.PerformLayout();

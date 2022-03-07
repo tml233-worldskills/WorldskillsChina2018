@@ -183,6 +183,16 @@ namespace WorldskillsChina2018.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        internal static System.Drawing.Bitmap NoPicture {
+            get {
+                object obj = ResourceManager.GetObject("NoPicture", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         internal static System.Drawing.Bitmap THE_CURRENT_BOARD_OF_DIRECTIONS {
             get {
                 object obj = ResourceManager.GetObject("THE CURRENT BOARD OF DIRECTIONS", resourceCulture);

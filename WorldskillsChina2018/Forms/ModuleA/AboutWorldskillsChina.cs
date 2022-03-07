@@ -65,12 +65,11 @@ namespace WorldskillsChina2018 {
 				downloadLabels[i].Text = string.Format("{0}. {1}", i+1, downloadFiles[i]);
 			}
 		}
-		string currentDownloadFile = string.Empty;
 		private void download0_Click(object sender, EventArgs e) {
 			DownloadFile(0);
 		}
 		void DownloadFile(int index) {
-			currentDownloadFile= downloadFiles[index];
+			var currentDownloadFile= downloadFiles[index];
 			saveFileDialog.FileName = currentDownloadFile;
 			if (saveFileDialog.ShowDialog() == DialogResult.OK) {
 				File.Copy(Utils.ResourcePath + "AboutWorldskillsChina/" + currentDownloadFile, saveFileDialog.FileName,true);
