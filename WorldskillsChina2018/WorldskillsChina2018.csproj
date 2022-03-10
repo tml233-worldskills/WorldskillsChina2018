@@ -72,6 +72,12 @@
     <Compile Include="Forms\ModuleB\AdministratorMenu.Designer.cs">
       <DependentUpon>AdministratorMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\ModuleB\Competitor\MySkills.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ModuleB\Competitor\MySkills.Designer.cs">
+      <DependentUpon>MySkills.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\ModuleB\Competitor\MyProfile.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -140,6 +146,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ModuleB\AdministratorMenu.resx">
       <DependentUpon>AdministratorMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ModuleB\Competitor\MySkills.resx">
+      <DependentUpon>MySkills.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ModuleB\Competitor\MyProfile.resx">
       <DependentUpon>MyProfile.cs</DependentUpon>

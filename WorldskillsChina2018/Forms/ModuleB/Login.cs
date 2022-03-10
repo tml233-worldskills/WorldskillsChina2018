@@ -91,11 +91,13 @@ namespace WorldskillsChina2018 {
 				MessageBox.Show("Please input your password!");
 				return;
 			}
-			var captcha = inputCap.Text.Trim();
-			if (captcha != lblCap.Text) {
-				MessageBox.Show("Captcha doesn't match!");
-				ResetCaptcha();
-				return;
+			if (!Utils.Debug) {
+				var captcha = inputCap.Text.Trim();
+				if (captcha != lblCap.Text) {
+					MessageBox.Show("Captcha doesn't match!");
+					ResetCaptcha();
+					return;
+				}
 			}
 			var role = Utils.ExecuteScalar("SELECT RoleId FROM [User] WHERE IdNumber=@0 AND Passwords=@1",id,password) as string;
 			if (role == null) {

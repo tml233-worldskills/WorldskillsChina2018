@@ -74,5 +74,13 @@ namespace WorldskillsChina2018 {
 				Close();
 			}
 		}
+
+		private void btn1_Click(object sender, EventArgs e) {
+			var form = new MySkills(id);
+			form.ShowDialog();
+			if (Login.LoggingOut) {
+				Close();
+			}
+		}
 	}
 }

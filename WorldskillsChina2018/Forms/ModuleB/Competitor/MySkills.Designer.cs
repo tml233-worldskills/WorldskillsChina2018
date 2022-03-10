@@ -1,5 +1,5 @@
 ﻿namespace WorldskillsChina2018 {
-	partial class CompetitorMenu {
+	partial class MySkills {
 		/// <summary>
 		/// Required designer variable.
 		/// </summary>
@@ -33,18 +33,21 @@
 			this.btnBack = new System.Windows.Forms.Button();
 			this.label1 = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
-			this.label3 = new System.Windows.Forms.Label();
-			this.panel2 = new System.Windows.Forms.Panel();
-			this.btn2 = new System.Windows.Forms.Button();
-			this.btn1 = new System.Windows.Forms.Button();
-			this.btn0 = new System.Windows.Forms.Button();
-			this.lblName = new System.Windows.Forms.Label();
-			this.picAvatar = new System.Windows.Forms.PictureBox();
+			this.tabControl1 = new System.Windows.Forms.TabControl();
+			this.tabPage1 = new System.Windows.Forms.TabPage();
+			this.list0 = new System.Windows.Forms.ListView();
+			this.tabPage2 = new System.Windows.Forms.TabPage();
+			this.list1 = new System.Windows.Forms.ListView();
+			this.tabPage3 = new System.Windows.Forms.TabPage();
+			this.tabPage4 = new System.Windows.Forms.TabPage();
+			this.tabPage5 = new System.Windows.Forms.TabPage();
+			this.lblSkill = new System.Windows.Forms.Label();
 			this.statusStrip1.SuspendLayout();
 			this.panel1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-			this.panel2.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.picAvatar)).BeginInit();
+			this.tabControl1.SuspendLayout();
+			this.tabPage1.SuspendLayout();
+			this.tabPage2.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// statusStrip1
@@ -140,115 +143,136 @@
 			this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
 			this.label2.Font = new System.Drawing.Font("Calibri", 20F);
-			this.label2.Location = new System.Drawing.Point(0, 93);
+			this.label2.Location = new System.Drawing.Point(0, 69);
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(769, 38);
 			this.label2.TabIndex = 7;
-			this.label2.Text = "Competitor Menu";
+			this.label2.Text = "My Profile";
 			this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
 			// 
-			// label3
+			// tabControl1
 			// 
-			this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+			this.tabControl1.Controls.Add(this.tabPage1);
+			this.tabControl1.Controls.Add(this.tabPage2);
+			this.tabControl1.Controls.Add(this.tabPage3);
+			this.tabControl1.Controls.Add(this.tabPage4);
+			this.tabControl1.Controls.Add(this.tabPage5);
+			this.tabControl1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.tabControl1.Location = new System.Drawing.Point(12, 148);
+			this.tabControl1.Name = "tabControl1";
+			this.tabControl1.SelectedIndex = 0;
+			this.tabControl1.Size = new System.Drawing.Size(745, 335);
+			this.tabControl1.TabIndex = 8;
+			this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
+			// 
+			// tabPage1
+			// 
+			this.tabPage1.Controls.Add(this.list0);
+			this.tabPage1.Location = new System.Drawing.Point(4, 28);
+			this.tabPage1.Name = "tabPage1";
+			this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+			this.tabPage1.Size = new System.Drawing.Size(737, 303);
+			this.tabPage1.TabIndex = 0;
+			this.tabPage1.Text = "Competitors";
+			this.tabPage1.UseVisualStyleBackColor = true;
+			// 
+			// list0
+			// 
+			this.list0.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.list0.HideSelection = false;
+			this.list0.Location = new System.Drawing.Point(3, 3);
+			this.list0.Name = "list0";
+			this.list0.Size = new System.Drawing.Size(731, 297);
+			this.list0.TabIndex = 0;
+			this.list0.UseCompatibleStateImageBehavior = false;
+			// 
+			// tabPage2
+			// 
+			this.tabPage2.Controls.Add(this.list1);
+			this.tabPage2.Location = new System.Drawing.Point(4, 28);
+			this.tabPage2.Name = "tabPage2";
+			this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+			this.tabPage2.Size = new System.Drawing.Size(737, 341);
+			this.tabPage2.TabIndex = 5;
+			this.tabPage2.Text = "Judgers";
+			this.tabPage2.UseVisualStyleBackColor = true;
+			// 
+			// list1
+			// 
+			this.list1.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.list1.HideSelection = false;
+			this.list1.Location = new System.Drawing.Point(3, 3);
+			this.list1.Name = "list1";
+			this.list1.Size = new System.Drawing.Size(731, 335);
+			this.list1.TabIndex = 1;
+			this.list1.UseCompatibleStateImageBehavior = false;
+			// 
+			// tabPage3
+			// 
+			this.tabPage3.Location = new System.Drawing.Point(4, 28);
+			this.tabPage3.Name = "tabPage3";
+			this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+			this.tabPage3.Size = new System.Drawing.Size(737, 341);
+			this.tabPage3.TabIndex = 6;
+			this.tabPage3.Text = "Workshop Layout";
+			this.tabPage3.UseVisualStyleBackColor = true;
+			// 
+			// tabPage4
+			// 
+			this.tabPage4.Location = new System.Drawing.Point(4, 28);
+			this.tabPage4.Name = "tabPage4";
+			this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+			this.tabPage4.Size = new System.Drawing.Size(737, 341);
+			this.tabPage4.TabIndex = 7;
+			this.tabPage4.Text = "Infrastructure";
+			this.tabPage4.UseVisualStyleBackColor = true;
+			// 
+			// tabPage5
+			// 
+			this.tabPage5.Location = new System.Drawing.Point(4, 28);
+			this.tabPage5.Name = "tabPage5";
+			this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
+			this.tabPage5.Size = new System.Drawing.Size(737, 341);
+			this.tabPage5.TabIndex = 8;
+			this.tabPage5.Text = "Schedule";
+			this.tabPage5.UseVisualStyleBackColor = true;
+			// 
+			// lblSkill
+			// 
+			this.lblSkill.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-			this.label3.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-			this.label3.Location = new System.Drawing.Point(39, 198);
-			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(384, 38);
-			this.label3.TabIndex = 8;
-			this.label3.Text = "Competitor Menu";
-			this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+			this.lblSkill.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lblSkill.Location = new System.Drawing.Point(1, 107);
+			this.lblSkill.Name = "lblSkill";
+			this.lblSkill.Size = new System.Drawing.Size(769, 38);
+			this.lblSkill.TabIndex = 9;
+			this.lblSkill.Text = "My Profile";
+			this.lblSkill.TextAlign = System.Drawing.ContentAlignment.TopCenter;
 			// 
-			// panel2
-			// 
-			this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.panel2.Controls.Add(this.btn2);
-			this.panel2.Controls.Add(this.btn1);
-			this.panel2.Controls.Add(this.btn0);
-			this.panel2.Controls.Add(this.lblName);
-			this.panel2.Controls.Add(this.picAvatar);
-			this.panel2.Location = new System.Drawing.Point(12, 146);
-			this.panel2.Name = "panel2";
-			this.panel2.Size = new System.Drawing.Size(745, 322);
-			this.panel2.TabIndex = 9;
-			// 
-			// btn2
-			// 
-			this.btn2.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btn2.Location = new System.Drawing.Point(390, 212);
-			this.btn2.Name = "btn2";
-			this.btn2.Size = new System.Drawing.Size(275, 82);
-			this.btn2.TabIndex = 13;
-			this.btn2.Text = "My Results";
-			this.btn2.UseVisualStyleBackColor = true;
-			// 
-			// btn1
-			// 
-			this.btn1.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btn1.Location = new System.Drawing.Point(390, 124);
-			this.btn1.Name = "btn1";
-			this.btn1.Size = new System.Drawing.Size(275, 82);
-			this.btn1.TabIndex = 12;
-			this.btn1.Text = "My Skills";
-			this.btn1.UseVisualStyleBackColor = true;
-			this.btn1.Click += new System.EventHandler(this.btn1_Click);
-			// 
-			// btn0
-			// 
-			this.btn0.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btn0.Location = new System.Drawing.Point(390, 36);
-			this.btn0.Name = "btn0";
-			this.btn0.Size = new System.Drawing.Size(275, 82);
-			this.btn0.TabIndex = 11;
-			this.btn0.Text = "My Profile";
-			this.btn0.UseVisualStyleBackColor = true;
-			this.btn0.Click += new System.EventHandler(this.btn0_Click);
-			// 
-			// lblName
-			// 
-			this.lblName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-			this.lblName.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lblName.Location = new System.Drawing.Point(88, 9);
-			this.lblName.Name = "lblName";
-			this.lblName.Size = new System.Drawing.Size(254, 69);
-			this.lblName.TabIndex = 10;
-			this.lblName.Text = "Good Morning!\r\nMr./Mrs. Name";
-			this.lblName.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-			// 
-			// picAvatar
-			// 
-			this.picAvatar.Image = global::WorldskillsChina2018.Properties.Resources.NoPicture;
-			this.picAvatar.Location = new System.Drawing.Point(106, 81);
-			this.picAvatar.Name = "picAvatar";
-			this.picAvatar.Size = new System.Drawing.Size(211, 219);
-			this.picAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-			this.picAvatar.TabIndex = 0;
-			this.picAvatar.TabStop = false;
-			// 
-			// CompetitorMenu
+			// MySkills
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(769, 521);
-			this.Controls.Add(this.panel2);
-			this.Controls.Add(this.label3);
+			this.Controls.Add(this.lblSkill);
+			this.Controls.Add(this.tabControl1);
 			this.Controls.Add(this.label2);
 			this.Controls.Add(this.panel1);
 			this.Controls.Add(this.statusStrip1);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
 			this.MaximizeBox = false;
-			this.Name = "CompetitorMenu";
+			this.Name = "MySkills";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-			this.Text = "Competitor Menu";
+			this.Text = "My Profile";
 			this.Load += new System.EventHandler(this.MainScreen_Load);
 			this.statusStrip1.ResumeLayout(false);
 			this.statusStrip1.PerformLayout();
 			this.panel1.ResumeLayout(false);
 			this.panel1.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-			this.panel2.ResumeLayout(false);
-			((System.ComponentModel.ISupportInitialize)(this.picAvatar)).EndInit();
+			this.tabControl1.ResumeLayout(false);
+			this.tabPage1.ResumeLayout(false);
+			this.tabPage2.ResumeLayout(false);
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -265,12 +289,14 @@
 		private System.Windows.Forms.PictureBox pictureBox1;
 		private System.Windows.Forms.Label label2;
 		private System.Windows.Forms.Button btnLogout;
-		private System.Windows.Forms.Label label3;
-		private System.Windows.Forms.Panel panel2;
-		private System.Windows.Forms.Button btn0;
-		private System.Windows.Forms.Label lblName;
-		private System.Windows.Forms.PictureBox picAvatar;
-		private System.Windows.Forms.Button btn2;
-		private System.Windows.Forms.Button btn1;
+		private System.Windows.Forms.TabControl tabControl1;
+		private System.Windows.Forms.TabPage tabPage1;
+		private System.Windows.Forms.ListView list0;
+		private System.Windows.Forms.TabPage tabPage2;
+		private System.Windows.Forms.TabPage tabPage3;
+		private System.Windows.Forms.TabPage tabPage4;
+		private System.Windows.Forms.TabPage tabPage5;
+		private System.Windows.Forms.ListView list1;
+		private System.Windows.Forms.Label lblSkill;
 	}
 }
