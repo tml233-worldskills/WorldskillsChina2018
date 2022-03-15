@@ -42,12 +42,20 @@
 			this.tabPage4 = new System.Windows.Forms.TabPage();
 			this.tabPage5 = new System.Windows.Forms.TabPage();
 			this.lblSkill = new System.Windows.Forms.Label();
+			this.pictureBox2 = new System.Windows.Forms.PictureBox();
+			this.pictureBox3 = new System.Windows.Forms.PictureBox();
+			this.textBox1 = new System.Windows.Forms.TextBox();
 			this.statusStrip1.SuspendLayout();
 			this.panel1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			this.tabControl1.SuspendLayout();
 			this.tabPage1.SuspendLayout();
 			this.tabPage2.SuspendLayout();
+			this.tabPage3.SuspendLayout();
+			this.tabPage4.SuspendLayout();
+			this.tabPage5.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// statusStrip1
@@ -192,7 +200,7 @@
 			this.tabPage2.Location = new System.Drawing.Point(4, 28);
 			this.tabPage2.Name = "tabPage2";
 			this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-			this.tabPage2.Size = new System.Drawing.Size(737, 341);
+			this.tabPage2.Size = new System.Drawing.Size(737, 303);
 			this.tabPage2.TabIndex = 5;
 			this.tabPage2.Text = "Judgers";
 			this.tabPage2.UseVisualStyleBackColor = true;
@@ -203,36 +211,39 @@
 			this.list1.HideSelection = false;
 			this.list1.Location = new System.Drawing.Point(3, 3);
 			this.list1.Name = "list1";
-			this.list1.Size = new System.Drawing.Size(731, 335);
+			this.list1.Size = new System.Drawing.Size(731, 297);
 			this.list1.TabIndex = 1;
 			this.list1.UseCompatibleStateImageBehavior = false;
 			// 
 			// tabPage3
 			// 
+			this.tabPage3.Controls.Add(this.pictureBox2);
 			this.tabPage3.Location = new System.Drawing.Point(4, 28);
 			this.tabPage3.Name = "tabPage3";
 			this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-			this.tabPage3.Size = new System.Drawing.Size(737, 341);
+			this.tabPage3.Size = new System.Drawing.Size(737, 303);
 			this.tabPage3.TabIndex = 6;
 			this.tabPage3.Text = "Workshop Layout";
 			this.tabPage3.UseVisualStyleBackColor = true;
 			// 
 			// tabPage4
 			// 
+			this.tabPage4.Controls.Add(this.pictureBox3);
 			this.tabPage4.Location = new System.Drawing.Point(4, 28);
 			this.tabPage4.Name = "tabPage4";
 			this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-			this.tabPage4.Size = new System.Drawing.Size(737, 341);
+			this.tabPage4.Size = new System.Drawing.Size(737, 303);
 			this.tabPage4.TabIndex = 7;
 			this.tabPage4.Text = "Infrastructure";
 			this.tabPage4.UseVisualStyleBackColor = true;
 			// 
 			// tabPage5
 			// 
+			this.tabPage5.Controls.Add(this.textBox1);
 			this.tabPage5.Location = new System.Drawing.Point(4, 28);
 			this.tabPage5.Name = "tabPage5";
 			this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-			this.tabPage5.Size = new System.Drawing.Size(737, 341);
+			this.tabPage5.Size = new System.Drawing.Size(737, 303);
 			this.tabPage5.TabIndex = 8;
 			this.tabPage5.Text = "Schedule";
 			this.tabPage5.UseVisualStyleBackColor = true;
@@ -248,6 +259,34 @@
 			this.lblSkill.TabIndex = 9;
 			this.lblSkill.Text = "My Profile";
 			this.lblSkill.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+			// 
+			// pictureBox2
+			// 
+			this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.pictureBox2.Location = new System.Drawing.Point(3, 3);
+			this.pictureBox2.Name = "pictureBox2";
+			this.pictureBox2.Size = new System.Drawing.Size(731, 297);
+			this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+			this.pictureBox2.TabIndex = 0;
+			this.pictureBox2.TabStop = false;
+			// 
+			// pictureBox3
+			// 
+			this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.pictureBox3.Location = new System.Drawing.Point(3, 3);
+			this.pictureBox3.Name = "pictureBox3";
+			this.pictureBox3.Size = new System.Drawing.Size(731, 297);
+			this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+			this.pictureBox3.TabIndex = 0;
+			this.pictureBox3.TabStop = false;
+			// 
+			// textBox1
+			// 
+			this.textBox1.Location = new System.Drawing.Point(0, 0);
+			this.textBox1.Multiline = true;
+			this.textBox1.Name = "textBox1";
+			this.textBox1.Size = new System.Drawing.Size(737, 303);
+			this.textBox1.TabIndex = 0;
 			// 
 			// MySkills
 			// 
@@ -273,6 +312,12 @@
 			this.tabControl1.ResumeLayout(false);
 			this.tabPage1.ResumeLayout(false);
 			this.tabPage2.ResumeLayout(false);
+			this.tabPage3.ResumeLayout(false);
+			this.tabPage4.ResumeLayout(false);
+			this.tabPage5.ResumeLayout(false);
+			this.tabPage5.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -298,5 +343,8 @@
 		private System.Windows.Forms.TabPage tabPage5;
 		private System.Windows.Forms.ListView list1;
 		private System.Windows.Forms.Label lblSkill;
+		private System.Windows.Forms.PictureBox pictureBox2;
+		private System.Windows.Forms.PictureBox pictureBox3;
+		private System.Windows.Forms.TextBox textBox1;
 	}
 }
