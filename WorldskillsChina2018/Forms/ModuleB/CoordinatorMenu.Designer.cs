@@ -29,6 +29,7 @@
 			this.timerBottom = new System.Windows.Forms.Timer(this.components);
 			this.panel1 = new System.Windows.Forms.Panel();
 			this.btnLogout = new System.Windows.Forms.Button();
+			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			this.btnBack = new System.Windows.Forms.Button();
 			this.label1 = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
@@ -38,11 +39,10 @@
 			this.btn1 = new System.Windows.Forms.Button();
 			this.btn0 = new System.Windows.Forms.Button();
 			this.lblName = new System.Windows.Forms.Label();
-			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			this.statusStrip1.SuspendLayout();
 			this.panel1.SuspendLayout();
-			this.panel2.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+			this.panel2.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// statusStrip1
@@ -99,6 +99,16 @@
 			this.btnLogout.Text = "Logout";
 			this.btnLogout.UseVisualStyleBackColor = true;
 			this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
+			// 
+			// pictureBox1
+			// 
+			this.pictureBox1.Image = global::WorldskillsChina2018.Properties.Resources.logo_color_bg_white;
+			this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+			this.pictureBox1.Name = "pictureBox1";
+			this.pictureBox1.Size = new System.Drawing.Size(79, 66);
+			this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+			this.pictureBox1.TabIndex = 6;
+			this.pictureBox1.TabStop = false;
 			// 
 			// btnBack
 			// 
@@ -188,6 +198,7 @@
 			this.btn0.TabIndex = 11;
 			this.btn0.Text = "Volunteer Management";
 			this.btn0.UseVisualStyleBackColor = true;
+			this.btn0.Click += new System.EventHandler(this.btn0_Click);
 			// 
 			// lblName
 			// 
@@ -200,16 +211,6 @@
 			this.lblName.TabIndex = 10;
 			this.lblName.Text = "Good Morning!\r\nMr./Mrs. Name";
 			this.lblName.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-			// 
-			// pictureBox1
-			// 
-			this.pictureBox1.Image = global::WorldskillsChina2018.Properties.Resources.logo_color_bg_white;
-			this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-			this.pictureBox1.Name = "pictureBox1";
-			this.pictureBox1.Size = new System.Drawing.Size(79, 66);
-			this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-			this.pictureBox1.TabIndex = 6;
-			this.pictureBox1.TabStop = false;
 			// 
 			// CoordinatorMenu
 			// 
@@ -231,8 +232,8 @@
 			this.statusStrip1.PerformLayout();
 			this.panel1.ResumeLayout(false);
 			this.panel1.PerformLayout();
-			this.panel2.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+			this.panel2.ResumeLayout(false);
 			this.ResumeLayout(false);
 			this.PerformLayout();
 

@@ -54,7 +54,7 @@ namespace WorldskillsChina2018 {
 		}
 
 		private void btnLogout_Click(object sender, EventArgs e) {
-			Owner.Close();
+			Login.LoggingOut = true;
 			Close();
 		}
 	}

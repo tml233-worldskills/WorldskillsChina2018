@@ -54,8 +54,16 @@ namespace WorldskillsChina2018 {
 		}
 
 		private void btnLogout_Click(object sender, EventArgs e) {
-			Owner.Close();
+			Login.LoggingOut = true;
 			Close();
+		}
+
+		private void btn0_Click(object sender, EventArgs e) {
+			var form = new VolunteerManagement(id);
+			form.ShowDialog();
+			if (Login.LoggingOut) {
+				Close();
+			}
 		}
 	}
 }
