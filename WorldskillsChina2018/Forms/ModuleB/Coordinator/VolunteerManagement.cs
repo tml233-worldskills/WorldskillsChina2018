@@ -142,5 +142,13 @@ namespace WorldskillsChina2018 {
 		private void btnSearch_Click(object sender, EventArgs e) {
 			UpdateData();
 		}
+
+		private void btnImport_Click(object sender, EventArgs e) {
+			var form = new ImportVolunteers(id);
+			form.ShowDialog();
+			if (Login.LoggingOut) {
+				Close();
+			}
+		}
 	}
 }

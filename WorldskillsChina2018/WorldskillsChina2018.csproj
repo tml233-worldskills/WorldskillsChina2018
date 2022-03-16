@@ -94,6 +94,12 @@
     <Compile Include="Forms\ModuleB\Competitor\MyProfile.Designer.cs">
       <DependentUpon>MyProfile.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\ModuleB\Coordinator\ImportVolunteers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ModuleB\Coordinator\ImportVolunteers.Designer.cs">
+      <DependentUpon>ImportVolunteers.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\ModuleB\Coordinator\VolunteerManagement.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -171,6 +177,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ModuleB\Competitor\MyProfile.resx">
       <DependentUpon>MyProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ModuleB\Coordinator\ImportVolunteers.resx">
+      <DependentUpon>ImportVolunteers.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ModuleB\Coordinator\VolunteerManagement.resx">
       <DependentUpon>VolunteerManagement.cs</DependentUpon>

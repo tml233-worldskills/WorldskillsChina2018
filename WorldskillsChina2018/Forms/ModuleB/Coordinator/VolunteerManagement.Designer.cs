@@ -223,6 +223,7 @@
 			this.btnImport.TabIndex = 13;
 			this.btnImport.Text = "Import Volunteers";
 			this.btnImport.UseVisualStyleBackColor = true;
+			this.btnImport.Click += new System.EventHandler(this.btnImport_Click);
 			// 
 			// btnAdjust
 			// 
