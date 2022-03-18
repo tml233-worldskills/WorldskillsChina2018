@@ -234,6 +234,7 @@
 			this.btnAdjust.TabIndex = 14;
 			this.btnAdjust.Text = "Adjust Volunteers Between Skills";
 			this.btnAdjust.UseVisualStyleBackColor = true;
+			this.btnAdjust.Click += new System.EventHandler(this.btnAdjust_Click);
 			// 
 			// dataGridView1
 			// 

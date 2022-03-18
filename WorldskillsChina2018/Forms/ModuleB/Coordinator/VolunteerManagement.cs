@@ -150,5 +150,13 @@ namespace WorldskillsChina2018 {
 				Close();
 			}
 		}
+
+		private void btnAdjust_Click(object sender, EventArgs e) {
+			var form = new AdjustVolunteers(id);
+			form.ShowDialog();
+			if (Login.LoggingOut) {
+				Close();
+			}
+		}
 	}
 }
