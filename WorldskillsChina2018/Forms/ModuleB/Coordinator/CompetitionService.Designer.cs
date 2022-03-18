@@ -35,16 +35,24 @@
 			this.label2 = new System.Windows.Forms.Label();
 			this.tabControl1 = new System.Windows.Forms.TabControl();
 			this.tabPage1 = new System.Windows.Forms.TabPage();
+			this.flowA = new System.Windows.Forms.FlowLayoutPanel();
 			this.tabPage2 = new System.Windows.Forms.TabPage();
 			this.tabPage3 = new System.Windows.Forms.TabPage();
 			this.tabPage4 = new System.Windows.Forms.TabPage();
 			this.tabPage5 = new System.Windows.Forms.TabPage();
-			this.flowA = new System.Windows.Forms.FlowLayoutPanel();
+			this.flowB = new System.Windows.Forms.FlowLayoutPanel();
+			this.flowC = new System.Windows.Forms.FlowLayoutPanel();
+			this.flowD = new System.Windows.Forms.FlowLayoutPanel();
+			this.flowE = new System.Windows.Forms.FlowLayoutPanel();
 			this.statusStrip1.SuspendLayout();
 			this.panel1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			this.tabControl1.SuspendLayout();
 			this.tabPage1.SuspendLayout();
+			this.tabPage2.SuspendLayout();
+			this.tabPage3.SuspendLayout();
+			this.tabPage4.SuspendLayout();
+			this.tabPage5.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// statusStrip1
@@ -173,8 +181,18 @@
 			this.tabPage1.Text = "A Zone";
 			this.tabPage1.UseVisualStyleBackColor = true;
 			// 
+			// flowA
+			// 
+			this.flowA.AutoScroll = true;
+			this.flowA.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.flowA.Location = new System.Drawing.Point(3, 3);
+			this.flowA.Name = "flowA";
+			this.flowA.Size = new System.Drawing.Size(731, 334);
+			this.flowA.TabIndex = 0;
+			// 
 			// tabPage2
 			// 
+			this.tabPage2.Controls.Add(this.flowB);
 			this.tabPage2.Location = new System.Drawing.Point(4, 28);
 			this.tabPage2.Name = "tabPage2";
 			this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
@@ -185,6 +203,7 @@
 			// 
 			// tabPage3
 			// 
+			this.tabPage3.Controls.Add(this.flowC);
 			this.tabPage3.Location = new System.Drawing.Point(4, 28);
 			this.tabPage3.Name = "tabPage3";
 			this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
@@ -195,6 +214,7 @@
 			// 
 			// tabPage4
 			// 
+			this.tabPage4.Controls.Add(this.flowD);
 			this.tabPage4.Location = new System.Drawing.Point(4, 28);
 			this.tabPage4.Name = "tabPage4";
 			this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
@@ -205,6 +225,7 @@
 			// 
 			// tabPage5
 			// 
+			this.tabPage5.Controls.Add(this.flowE);
 			this.tabPage5.Location = new System.Drawing.Point(4, 28);
 			this.tabPage5.Name = "tabPage5";
 			this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
@@ -213,13 +234,41 @@
 			this.tabPage5.Text = "E Zone";
 			this.tabPage5.UseVisualStyleBackColor = true;
 			// 
-			// flowA
+			// flowB
 			// 
-			this.flowA.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.flowA.Location = new System.Drawing.Point(3, 3);
-			this.flowA.Name = "flowA";
-			this.flowA.Size = new System.Drawing.Size(731, 334);
-			this.flowA.TabIndex = 0;
+			this.flowB.AutoScroll = true;
+			this.flowB.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.flowB.Location = new System.Drawing.Point(3, 3);
+			this.flowB.Name = "flowB";
+			this.flowB.Size = new System.Drawing.Size(731, 334);
+			this.flowB.TabIndex = 1;
+			// 
+			// flowC
+			// 
+			this.flowC.AutoScroll = true;
+			this.flowC.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.flowC.Location = new System.Drawing.Point(3, 3);
+			this.flowC.Name = "flowC";
+			this.flowC.Size = new System.Drawing.Size(731, 334);
+			this.flowC.TabIndex = 1;
+			// 
+			// flowD
+			// 
+			this.flowD.AutoScroll = true;
+			this.flowD.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.flowD.Location = new System.Drawing.Point(3, 3);
+			this.flowD.Name = "flowD";
+			this.flowD.Size = new System.Drawing.Size(731, 334);
+			this.flowD.TabIndex = 1;
+			// 
+			// flowE
+			// 
+			this.flowE.AutoScroll = true;
+			this.flowE.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.flowE.Location = new System.Drawing.Point(3, 3);
+			this.flowE.Name = "flowE";
+			this.flowE.Size = new System.Drawing.Size(731, 334);
+			this.flowE.TabIndex = 1;
 			// 
 			// CompetitionService
 			// 
@@ -243,6 +292,10 @@
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
 			this.tabControl1.ResumeLayout(false);
 			this.tabPage1.ResumeLayout(false);
+			this.tabPage2.ResumeLayout(false);
+			this.tabPage3.ResumeLayout(false);
+			this.tabPage4.ResumeLayout(false);
+			this.tabPage5.ResumeLayout(false);
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -266,5 +319,9 @@
 		private System.Windows.Forms.TabPage tabPage4;
 		private System.Windows.Forms.TabPage tabPage5;
 		private System.Windows.Forms.FlowLayoutPanel flowA;
+		private System.Windows.Forms.FlowLayoutPanel flowB;
+		private System.Windows.Forms.FlowLayoutPanel flowC;
+		private System.Windows.Forms.FlowLayoutPanel flowD;
+		private System.Windows.Forms.FlowLayoutPanel flowE;
 	}
 }

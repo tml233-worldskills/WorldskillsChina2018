@@ -178,6 +178,7 @@
 			this.btn2.TabIndex = 13;
 			this.btn2.Text = "Competition Service";
 			this.btn2.UseVisualStyleBackColor = true;
+			this.btn2.Click += new System.EventHandler(this.btn2_Click);
 			// 
 			// btn1
 			// 

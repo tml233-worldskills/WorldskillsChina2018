@@ -40,43 +40,48 @@
 			this.panel1.Controls.Add(this.lblTitle);
 			this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.panel1.Location = new System.Drawing.Point(0, 0);
+			this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
 			this.panel1.Name = "panel1";
-			this.panel1.Size = new System.Drawing.Size(152, 162);
+			this.panel1.Size = new System.Drawing.Size(140, 132);
 			this.panel1.TabIndex = 0;
 			// 
 			// lblDetail
 			// 
-			this.lblDetail.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+			this.lblDetail.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-			this.lblDetail.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lblDetail.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold);
 			this.lblDetail.ForeColor = System.Drawing.SystemColors.ControlText;
-			this.lblDetail.Location = new System.Drawing.Point(3, 89);
+			this.lblDetail.Location = new System.Drawing.Point(4, 90);
+			this.lblDetail.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.lblDetail.Name = "lblDetail";
-			this.lblDetail.Size = new System.Drawing.Size(144, 47);
+			this.lblDetail.Size = new System.Drawing.Size(130, 31);
 			this.lblDetail.TabIndex = 1;
 			this.lblDetail.Text = "Competitors: 30\r\nJudgers: 6";
-			this.lblDetail.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+			this.lblDetail.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
 			// 
 			// lblTitle
 			// 
 			this.lblTitle.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-			this.lblTitle.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lblTitle.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold);
 			this.lblTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(112)))), ((int)(((byte)(192)))));
-			this.lblTitle.Location = new System.Drawing.Point(3, 24);
+			this.lblTitle.Location = new System.Drawing.Point(4, 12);
+			this.lblTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.lblTitle.Name = "lblTitle";
-			this.lblTitle.Size = new System.Drawing.Size(144, 83);
+			this.lblTitle.Size = new System.Drawing.Size(130, 68);
 			this.lblTitle.TabIndex = 0;
 			this.lblTitle.Text = "20\r\nWeb Design";
 			this.lblTitle.TextAlign = System.Drawing.ContentAlignment.TopCenter;
 			// 
 			// CompetitionServiceBlock
 			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.Controls.Add(this.panel1);
+			this.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
 			this.Name = "CompetitionServiceBlock";
-			this.Size = new System.Drawing.Size(152, 162);
+			this.Size = new System.Drawing.Size(140, 132);
 			this.panel1.ResumeLayout(false);
 			this.ResumeLayout(false);
 

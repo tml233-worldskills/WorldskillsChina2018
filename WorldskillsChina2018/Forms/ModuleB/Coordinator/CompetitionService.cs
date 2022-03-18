@@ -49,21 +49,30 @@ namespace WorldskillsChina2018 {
 			Close();
 		}
 
+		const string bigAssSql = "SELECT Skills.SkillsId as Id, Skills.SkillsName as Name, COUNT(DISTINCT CompetitorId) as CompetitorCount, COUNT(DISTINCT JudgerId) as JudgerCount FROM SkillsInEvent,Skills,Competition,Judge WHERE Skills.SkillsId=SkillsInEvent.SkillsId AND Skills.SkillsId=Judge.SkillsId AND Skills.SkillsId=Competition.SkillsId AND SkillsInEvent.EventId=@0 AND SkillsInEvent.ZoneId=@1 GROUP BY Skills.SkillsId,Skills.SkillsName";
+		void LoadData(FlowLayoutPanel flow,string zone) {
+			flow.Controls.Clear();
+			foreach (var r in Utils.ExecuteReader(bigAssSql, eventId, zone)) {
+				var control = new CompetitionServiceBlock();
+				control.lblTitle.Text = r["Id"].ToString() + "\n" + r["Name"].ToString();
+				control.lblDetail.Text = "Competitors: " + r["CompetitorCount"].ToString() + "\nJudgers: " + r["JudgerCount"].ToString();
+				flow.Controls.Add(control);
+			}
+		}
 		void LoadA() {
-			flowA.Controls.Clear();
-			
+			LoadData(flowA, "A");
 		}
 		void LoadB() {
-
+			LoadData(flowB, "B");
 		}
 		void LoadC() {
-
+			LoadData(flowC, "C");
 		}
 		void LoadD() {
-
+			LoadData(flowD, "D");
 		}
 		void LoadE() {
-
+			LoadData(flowE, "E");
 		}
 		private void tabControl1_SelectedIndexChanged(object sender, EventArgs e) {
 			switch (tabControl1.SelectedIndex) {
