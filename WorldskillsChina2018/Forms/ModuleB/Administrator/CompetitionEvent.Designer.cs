@@ -29,6 +29,7 @@
 			this.timerBottom = new System.Windows.Forms.Timer(this.components);
 			this.panel1 = new System.Windows.Forms.Panel();
 			this.btnLogout = new System.Windows.Forms.Button();
+			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			this.btnBack = new System.Windows.Forms.Button();
 			this.label1 = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
@@ -38,14 +39,13 @@
 			this.btnSearch = new System.Windows.Forms.Button();
 			this.lblTotal = new System.Windows.Forms.Label();
 			this.dataGridView1 = new System.Windows.Forms.DataGridView();
+			this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.button3 = new System.Windows.Forms.Button();
 			this.button4 = new System.Windows.Forms.Button();
-			this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			this.statusStrip1.SuspendLayout();
 			this.panel1.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// statusStrip1
@@ -103,6 +103,16 @@
 			this.btnLogout.UseVisualStyleBackColor = true;
 			this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
 			// 
+			// pictureBox1
+			// 
+			this.pictureBox1.Image = global::WorldskillsChina2018.Properties.Resources.logo_color_bg_white;
+			this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+			this.pictureBox1.Name = "pictureBox1";
+			this.pictureBox1.Size = new System.Drawing.Size(79, 66);
+			this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+			this.pictureBox1.TabIndex = 6;
+			this.pictureBox1.TabStop = false;
+			// 
 			// btnBack
 			// 
 			this.btnBack.Font = new System.Drawing.Font("Calibri", 12F);
@@ -147,6 +157,7 @@
 			this.button1.TabIndex = 8;
 			this.button1.Text = "+  Add an Event";
 			this.button1.UseVisualStyleBackColor = true;
+			this.button1.Click += new System.EventHandler(this.button1_Click);
 			// 
 			// label3
 			// 
@@ -202,6 +213,14 @@
 			this.dataGridView1.Size = new System.Drawing.Size(745, 215);
 			this.dataGridView1.TabIndex = 13;
 			// 
+			// Column1
+			// 
+			this.Column1.DataPropertyName = "EventId";
+			this.Column1.HeaderText = "Column1";
+			this.Column1.Name = "Column1";
+			this.Column1.ReadOnly = true;
+			this.Column1.Visible = false;
+			// 
 			// button3
 			// 
 			this.button3.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -222,24 +241,7 @@
 			this.button4.TabIndex = 15;
 			this.button4.Text = "Edit";
 			this.button4.UseVisualStyleBackColor = true;
-			// 
-			// Column1
-			// 
-			this.Column1.DataPropertyName = "EventId";
-			this.Column1.HeaderText = "Column1";
-			this.Column1.Name = "Column1";
-			this.Column1.ReadOnly = true;
-			this.Column1.Visible = false;
-			// 
-			// pictureBox1
-			// 
-			this.pictureBox1.Image = global::WorldskillsChina2018.Properties.Resources.logo_color_bg_white;
-			this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-			this.pictureBox1.Name = "pictureBox1";
-			this.pictureBox1.Size = new System.Drawing.Size(79, 66);
-			this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-			this.pictureBox1.TabIndex = 6;
-			this.pictureBox1.TabStop = false;
+			this.button4.Click += new System.EventHandler(this.button4_Click);
 			// 
 			// CompetitionEvent
 			// 
@@ -267,8 +269,8 @@
 			this.statusStrip1.PerformLayout();
 			this.panel1.ResumeLayout(false);
 			this.panel1.PerformLayout();
-			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 

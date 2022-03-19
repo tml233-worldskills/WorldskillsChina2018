@@ -44,10 +44,18 @@
 			this.label4 = new System.Windows.Forms.Label();
 			this.inputId = new System.Windows.Forms.TextBox();
 			this.label3 = new System.Windows.Forms.Label();
+			this.panelTest = new System.Windows.Forms.Panel();
+			this.label6 = new System.Windows.Forms.Label();
+			this.label7 = new System.Windows.Forms.Label();
+			this.button1 = new System.Windows.Forms.Button();
+			this.button3 = new System.Windows.Forms.Button();
+			this.button4 = new System.Windows.Forms.Button();
+			this.button5 = new System.Windows.Forms.Button();
 			this.statusStrip1.SuspendLayout();
 			this.panel1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			this.panel2.SuspendLayout();
+			this.panelTest.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// statusStrip1
@@ -269,11 +277,92 @@
 			this.label3.Text = "Idnumber:";
 			this.label3.TextAlign = System.Drawing.ContentAlignment.TopRight;
 			// 
+			// panelTest
+			// 
+			this.panelTest.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+			this.panelTest.Controls.Add(this.button5);
+			this.panelTest.Controls.Add(this.button4);
+			this.panelTest.Controls.Add(this.button3);
+			this.panelTest.Controls.Add(this.button1);
+			this.panelTest.Controls.Add(this.label7);
+			this.panelTest.Controls.Add(this.label6);
+			this.panelTest.Location = new System.Drawing.Point(129, 151);
+			this.panelTest.Name = "panelTest";
+			this.panelTest.Size = new System.Drawing.Size(526, 286);
+			this.panelTest.TabIndex = 9;
+			// 
+			// label6
+			// 
+			this.label6.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label6.Location = new System.Drawing.Point(3, 5);
+			this.label6.Name = "label6";
+			this.label6.Size = new System.Drawing.Size(518, 43);
+			this.label6.TabIndex = 0;
+			this.label6.Text = "FOR TESTING ONLY!";
+			this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			// 
+			// label7
+			// 
+			this.label7.AutoSize = true;
+			this.label7.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label7.ForeColor = System.Drawing.Color.Red;
+			this.label7.Location = new System.Drawing.Point(491, 5);
+			this.label7.Name = "label7";
+			this.label7.Size = new System.Drawing.Size(30, 33);
+			this.label7.TabIndex = 1;
+			this.label7.Text = "X";
+			this.label7.Click += new System.EventHandler(this.label7_Click);
+			// 
+			// button1
+			// 
+			this.button1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.button1.Location = new System.Drawing.Point(185, 46);
+			this.button1.Name = "button1";
+			this.button1.Size = new System.Drawing.Size(158, 38);
+			this.button1.TabIndex = 2;
+			this.button1.Text = "Competitor";
+			this.button1.UseVisualStyleBackColor = true;
+			this.button1.Click += new System.EventHandler(this.button1_Click);
+			// 
+			// button3
+			// 
+			this.button3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.button3.Location = new System.Drawing.Point(185, 90);
+			this.button3.Name = "button3";
+			this.button3.Size = new System.Drawing.Size(158, 38);
+			this.button3.TabIndex = 3;
+			this.button3.Text = "Coordinator";
+			this.button3.UseVisualStyleBackColor = true;
+			this.button3.Click += new System.EventHandler(this.button3_Click);
+			// 
+			// button4
+			// 
+			this.button4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.button4.Location = new System.Drawing.Point(185, 134);
+			this.button4.Name = "button4";
+			this.button4.Size = new System.Drawing.Size(158, 38);
+			this.button4.TabIndex = 4;
+			this.button4.Text = "Administrator";
+			this.button4.UseVisualStyleBackColor = true;
+			this.button4.Click += new System.EventHandler(this.button4_Click);
+			// 
+			// button5
+			// 
+			this.button5.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.button5.Location = new System.Drawing.Point(185, 178);
+			this.button5.Name = "button5";
+			this.button5.Size = new System.Drawing.Size(158, 38);
+			this.button5.TabIndex = 5;
+			this.button5.Text = "Judger";
+			this.button5.UseVisualStyleBackColor = true;
+			this.button5.Click += new System.EventHandler(this.button5_Click);
+			// 
 			// Login
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(769, 521);
+			this.Controls.Add(this.panelTest);
 			this.Controls.Add(this.panel2);
 			this.Controls.Add(this.label2);
 			this.Controls.Add(this.panel1);
@@ -291,6 +380,8 @@
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
 			this.panel2.ResumeLayout(false);
 			this.panel2.PerformLayout();
+			this.panelTest.ResumeLayout(false);
+			this.panelTest.PerformLayout();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -318,5 +409,12 @@
 		private System.Windows.Forms.Label lblCap;
 		private System.Windows.Forms.TextBox inputCap;
 		private System.Windows.Forms.Label label5;
+		private System.Windows.Forms.Panel panelTest;
+		private System.Windows.Forms.Label label7;
+		private System.Windows.Forms.Label label6;
+		private System.Windows.Forms.Button button5;
+		private System.Windows.Forms.Button button4;
+		private System.Windows.Forms.Button button3;
+		private System.Windows.Forms.Button button1;
 	}
 }

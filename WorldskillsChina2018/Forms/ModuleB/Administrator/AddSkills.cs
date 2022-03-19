@@ -66,7 +66,7 @@ namespace WorldskillsChina2018 {
 			}
 
 			MessageBox.Show("Save complete!");
-			UpdateData();
+			Close();
 		}
 
 		private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e) {

@@ -99,7 +99,7 @@ namespace WorldskillsChina2018 {
 					return;
 				}
 			}
-			var role = Utils.ExecuteScalar("SELECT RoleId FROM [User] WHERE IdNumber=@0 AND Passwords=@1",id,password) as string;
+			var role = Utils.ExecuteScalar("SELECT RoleId FROM [User] WHERE IdNumber=@0 AND Passwords=@1 AND RoleId=@2",id,password,targetRole) as string;
 			if (role == null) {
 				remainTimes -= 1;
 				var hint = remainTimes > 0 ? string.Format("You have {0} tries left.", remainTimes) : "You have used up all of your login tries.";
@@ -161,6 +161,35 @@ namespace WorldskillsChina2018 {
 
 		private void label6_Click(object sender, EventArgs e) {
 			ResetCaptcha();
+		}
+
+		private void label7_Click(object sender, EventArgs e) {
+			Close();
+		}
+
+		string targetRole = "1";
+		private void button1_Click(object sender, EventArgs e) {
+			targetRole = "1";
+			panelTest.Enabled = false;
+			panelTest.Visible = false;
+		}
+
+		private void button3_Click(object sender, EventArgs e) {
+			targetRole = "2";
+			panelTest.Enabled = false;
+			panelTest.Visible = false;
+		}
+
+		private void button4_Click(object sender, EventArgs e) {
+			targetRole = "3";
+			panelTest.Enabled = false;
+			panelTest.Visible = false;
+		}
+
+		private void button5_Click(object sender, EventArgs e) {
+			targetRole = "4";
+			panelTest.Enabled = false;
+			panelTest.Visible = false;
 		}
 	}
 }

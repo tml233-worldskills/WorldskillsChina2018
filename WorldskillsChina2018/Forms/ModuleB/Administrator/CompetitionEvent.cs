@@ -76,5 +76,13 @@ namespace WorldskillsChina2018 {
 				Close();
 			}
 		}
+
+		private void button1_Click(object sender, EventArgs e) {
+			MessageBox.Show("This feature would be a future add-on to the current system.");
+		}
+
+		private void button4_Click(object sender, EventArgs e) {
+			MessageBox.Show("This feature would be a future add-on to the current system.");
+		}
 	}
 }

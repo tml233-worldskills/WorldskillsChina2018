@@ -178,6 +178,7 @@
 			// 
 			// textBox1
 			// 
+			this.textBox1.Enabled = false;
 			this.textBox1.Font = new System.Drawing.Font("Calibri", 12F);
 			this.textBox1.Location = new System.Drawing.Point(289, 187);
 			this.textBox1.Name = "textBox1";

@@ -46,6 +46,14 @@
 			this.label7 = new System.Windows.Forms.Label();
 			this.label6 = new System.Windows.Forms.Label();
 			this.panel3 = new System.Windows.Forms.Panel();
+			this.lblScore = new System.Windows.Forms.Label();
+			this.lblMn = new System.Windows.Forms.TextBox();
+			this.label9 = new System.Windows.Forms.Label();
+			this.lblM3 = new System.Windows.Forms.TextBox();
+			this.label5 = new System.Windows.Forms.Label();
+			this.lblM2 = new System.Windows.Forms.TextBox();
+			this.label4 = new System.Windows.Forms.Label();
+			this.lblM1 = new System.Windows.Forms.TextBox();
 			this.lblNumber = new System.Windows.Forms.Label();
 			this.lblSkills = new System.Windows.Forms.Label();
 			this.lblEvent = new System.Windows.Forms.Label();
@@ -53,14 +61,6 @@
 			this.label16 = new System.Windows.Forms.Label();
 			this.label17 = new System.Windows.Forms.Label();
 			this.label18 = new System.Windows.Forms.Label();
-			this.lblM1 = new System.Windows.Forms.TextBox();
-			this.lblM2 = new System.Windows.Forms.TextBox();
-			this.label4 = new System.Windows.Forms.Label();
-			this.lblM3 = new System.Windows.Forms.TextBox();
-			this.label5 = new System.Windows.Forms.Label();
-			this.lblMn = new System.Windows.Forms.TextBox();
-			this.label9 = new System.Windows.Forms.Label();
-			this.lblScore = new System.Windows.Forms.Label();
 			this.statusStrip1.SuspendLayout();
 			this.panel1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -321,6 +321,86 @@
 			this.panel3.Size = new System.Drawing.Size(365, 358);
 			this.panel3.TabIndex = 31;
 			// 
+			// lblScore
+			// 
+			this.lblScore.Font = new System.Drawing.Font("Calibri", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lblScore.Location = new System.Drawing.Point(64, 307);
+			this.lblScore.Name = "lblScore";
+			this.lblScore.Size = new System.Drawing.Size(207, 49);
+			this.lblScore.TabIndex = 36;
+			this.lblScore.Text = "100.00";
+			this.lblScore.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			// 
+			// lblMn
+			// 
+			this.lblMn.Enabled = false;
+			this.lblMn.Font = new System.Drawing.Font("Calibri", 12F);
+			this.lblMn.Location = new System.Drawing.Point(128, 277);
+			this.lblMn.Name = "lblMn";
+			this.lblMn.ReadOnly = true;
+			this.lblMn.Size = new System.Drawing.Size(143, 27);
+			this.lblMn.TabIndex = 34;
+			// 
+			// label9
+			// 
+			this.label9.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label9.Location = new System.Drawing.Point(8, 276);
+			this.label9.Name = "label9";
+			this.label9.Size = new System.Drawing.Size(114, 30);
+			this.label9.TabIndex = 33;
+			this.label9.Text = "Module 4:";
+			this.label9.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			// 
+			// lblM3
+			// 
+			this.lblM3.Enabled = false;
+			this.lblM3.Font = new System.Drawing.Font("Calibri", 12F);
+			this.lblM3.Location = new System.Drawing.Point(128, 244);
+			this.lblM3.Name = "lblM3";
+			this.lblM3.ReadOnly = true;
+			this.lblM3.Size = new System.Drawing.Size(143, 27);
+			this.lblM3.TabIndex = 32;
+			// 
+			// label5
+			// 
+			this.label5.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label5.Location = new System.Drawing.Point(8, 243);
+			this.label5.Name = "label5";
+			this.label5.Size = new System.Drawing.Size(114, 30);
+			this.label5.TabIndex = 31;
+			this.label5.Text = "Module 3:";
+			this.label5.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			// 
+			// lblM2
+			// 
+			this.lblM2.Enabled = false;
+			this.lblM2.Font = new System.Drawing.Font("Calibri", 12F);
+			this.lblM2.Location = new System.Drawing.Point(128, 211);
+			this.lblM2.Name = "lblM2";
+			this.lblM2.ReadOnly = true;
+			this.lblM2.Size = new System.Drawing.Size(143, 27);
+			this.lblM2.TabIndex = 30;
+			// 
+			// label4
+			// 
+			this.label4.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label4.Location = new System.Drawing.Point(8, 210);
+			this.label4.Name = "label4";
+			this.label4.Size = new System.Drawing.Size(114, 30);
+			this.label4.TabIndex = 29;
+			this.label4.Text = "Module 2:";
+			this.label4.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			// 
+			// lblM1
+			// 
+			this.lblM1.Enabled = false;
+			this.lblM1.Font = new System.Drawing.Font("Calibri", 12F);
+			this.lblM1.Location = new System.Drawing.Point(128, 178);
+			this.lblM1.Name = "lblM1";
+			this.lblM1.ReadOnly = true;
+			this.lblM1.Size = new System.Drawing.Size(143, 27);
+			this.lblM1.TabIndex = 28;
+			// 
 			// lblNumber
 			// 
 			this.lblNumber.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -390,82 +470,6 @@
 			this.label18.TabIndex = 17;
 			this.label18.Text = "Event:";
 			this.label18.TextAlign = System.Drawing.ContentAlignment.TopRight;
-			// 
-			// lblM1
-			// 
-			this.lblM1.Font = new System.Drawing.Font("Calibri", 12F);
-			this.lblM1.Location = new System.Drawing.Point(128, 178);
-			this.lblM1.Name = "lblM1";
-			this.lblM1.ReadOnly = true;
-			this.lblM1.Size = new System.Drawing.Size(143, 27);
-			this.lblM1.TabIndex = 28;
-			// 
-			// lblM2
-			// 
-			this.lblM2.Font = new System.Drawing.Font("Calibri", 12F);
-			this.lblM2.Location = new System.Drawing.Point(128, 211);
-			this.lblM2.Name = "lblM2";
-			this.lblM2.ReadOnly = true;
-			this.lblM2.Size = new System.Drawing.Size(143, 27);
-			this.lblM2.TabIndex = 30;
-			// 
-			// label4
-			// 
-			this.label4.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label4.Location = new System.Drawing.Point(8, 210);
-			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size(114, 30);
-			this.label4.TabIndex = 29;
-			this.label4.Text = "Module 2:";
-			this.label4.TextAlign = System.Drawing.ContentAlignment.TopRight;
-			// 
-			// lblM3
-			// 
-			this.lblM3.Font = new System.Drawing.Font("Calibri", 12F);
-			this.lblM3.Location = new System.Drawing.Point(128, 244);
-			this.lblM3.Name = "lblM3";
-			this.lblM3.ReadOnly = true;
-			this.lblM3.Size = new System.Drawing.Size(143, 27);
-			this.lblM3.TabIndex = 32;
-			// 
-			// label5
-			// 
-			this.label5.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label5.Location = new System.Drawing.Point(8, 243);
-			this.label5.Name = "label5";
-			this.label5.Size = new System.Drawing.Size(114, 30);
-			this.label5.TabIndex = 31;
-			this.label5.Text = "Module 3:";
-			this.label5.TextAlign = System.Drawing.ContentAlignment.TopRight;
-			// 
-			// lblMn
-			// 
-			this.lblMn.Font = new System.Drawing.Font("Calibri", 12F);
-			this.lblMn.Location = new System.Drawing.Point(128, 277);
-			this.lblMn.Name = "lblMn";
-			this.lblMn.ReadOnly = true;
-			this.lblMn.Size = new System.Drawing.Size(143, 27);
-			this.lblMn.TabIndex = 34;
-			// 
-			// label9
-			// 
-			this.label9.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label9.Location = new System.Drawing.Point(8, 276);
-			this.label9.Name = "label9";
-			this.label9.Size = new System.Drawing.Size(114, 30);
-			this.label9.TabIndex = 33;
-			this.label9.Text = "Module 4:";
-			this.label9.TextAlign = System.Drawing.ContentAlignment.TopRight;
-			// 
-			// lblScore
-			// 
-			this.lblScore.Font = new System.Drawing.Font("Calibri", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lblScore.Location = new System.Drawing.Point(64, 307);
-			this.lblScore.Name = "lblScore";
-			this.lblScore.Size = new System.Drawing.Size(207, 49);
-			this.lblScore.TabIndex = 36;
-			this.lblScore.Text = "100.00";
-			this.lblScore.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
 			// MyResults
 			// 
