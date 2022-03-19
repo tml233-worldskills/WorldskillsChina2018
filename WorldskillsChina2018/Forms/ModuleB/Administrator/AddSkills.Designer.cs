@@ -1,5 +1,5 @@
 ﻿namespace WorldskillsChina2018 {
-	partial class CompetitionSkillsB {
+	partial class AddSkills {
 		/// <summary>
 		/// Required designer variable.
 		/// </summary>
@@ -34,16 +34,20 @@
 			this.label1 = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
 			this.label3 = new System.Windows.Forms.Label();
-			this.comboEvent = new System.Windows.Forms.ComboBox();
-			this.btnSearch = new System.Windows.Forms.Button();
 			this.label4 = new System.Windows.Forms.Label();
 			this.lblTotal = new System.Windows.Forms.Label();
 			this.dataGridView1 = new System.Windows.Forms.DataGridView();
 			this.button1 = new System.Windows.Forms.Button();
+			this.panel2 = new System.Windows.Forms.Panel();
+			this.lblEvent = new System.Windows.Forms.Label();
+			this.colCheckbox = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+			this.colId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.colName = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.statusStrip1.SuspendLayout();
 			this.panel1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+			this.panel2.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// statusStrip1
@@ -143,7 +147,7 @@
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(769, 38);
 			this.label2.TabIndex = 7;
-			this.label2.Text = "Competition Skills";
+			this.label2.Text = "Add Skills";
 			this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
 			// 
 			// label3
@@ -156,27 +160,6 @@
 			this.label3.Text = "Event:";
 			this.label3.TextAlign = System.Drawing.ContentAlignment.TopRight;
 			// 
-			// comboEvent
-			// 
-			this.comboEvent.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.comboEvent.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.comboEvent.FormattingEnabled = true;
-			this.comboEvent.Location = new System.Drawing.Point(233, 110);
-			this.comboEvent.Name = "comboEvent";
-			this.comboEvent.Size = new System.Drawing.Size(289, 27);
-			this.comboEvent.TabIndex = 9;
-			// 
-			// btnSearch
-			// 
-			this.btnSearch.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnSearch.Location = new System.Drawing.Point(528, 106);
-			this.btnSearch.Name = "btnSearch";
-			this.btnSearch.Size = new System.Drawing.Size(95, 33);
-			this.btnSearch.TabIndex = 10;
-			this.btnSearch.Text = "Search";
-			this.btnSearch.UseVisualStyleBackColor = true;
-			this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
-			// 
 			// label4
 			// 
 			this.label4.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -184,14 +167,14 @@
 			this.label4.Name = "label4";
 			this.label4.Size = new System.Drawing.Size(374, 23);
 			this.label4.TabIndex = 11;
-			this.label4.Text = "Skills in the selected event";
+			this.label4.Text = "Skills not in the selected event";
 			// 
 			// lblTotal
 			// 
 			this.lblTotal.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lblTotal.Location = new System.Drawing.Point(12, 163);
+			this.lblTotal.Location = new System.Drawing.Point(4, 5);
 			this.lblTotal.Name = "lblTotal";
-			this.lblTotal.Size = new System.Drawing.Size(745, 23);
+			this.lblTotal.Size = new System.Drawing.Size(738, 23);
 			this.lblTotal.TabIndex = 12;
 			this.lblTotal.Text = "Total Skills: 0";
 			this.lblTotal.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -202,12 +185,17 @@
 			this.dataGridView1.AllowUserToDeleteRows = false;
 			this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
 			this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-			this.dataGridView1.Location = new System.Drawing.Point(13, 190);
+			this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.colCheckbox,
+            this.colId,
+            this.colName});
+			this.dataGridView1.Location = new System.Drawing.Point(4, 31);
 			this.dataGridView1.Name = "dataGridView1";
 			this.dataGridView1.ReadOnly = true;
 			this.dataGridView1.RowTemplate.Height = 23;
-			this.dataGridView1.Size = new System.Drawing.Size(744, 254);
+			this.dataGridView1.Size = new System.Drawing.Size(738, 244);
 			this.dataGridView1.TabIndex = 13;
+			this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
 			// 
 			// button1
 			// 
@@ -216,28 +204,66 @@
 			this.button1.Name = "button1";
 			this.button1.Size = new System.Drawing.Size(95, 33);
 			this.button1.TabIndex = 14;
-			this.button1.Text = "Add Skills";
+			this.button1.Text = "Save";
 			this.button1.UseVisualStyleBackColor = true;
 			this.button1.Click += new System.EventHandler(this.button1_Click);
 			// 
-			// CompetitionSkillsB
+			// panel2
+			// 
+			this.panel2.Controls.Add(this.lblTotal);
+			this.panel2.Controls.Add(this.dataGridView1);
+			this.panel2.Location = new System.Drawing.Point(12, 166);
+			this.panel2.Name = "panel2";
+			this.panel2.Size = new System.Drawing.Size(745, 278);
+			this.panel2.TabIndex = 15;
+			// 
+			// lblEvent
+			// 
+			this.lblEvent.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lblEvent.Location = new System.Drawing.Point(233, 110);
+			this.lblEvent.Name = "lblEvent";
+			this.lblEvent.Size = new System.Drawing.Size(521, 23);
+			this.lblEvent.TabIndex = 16;
+			this.lblEvent.Text = "Event:";
+			// 
+			// colCheckbox
+			// 
+			this.colCheckbox.FillWeight = 10F;
+			this.colCheckbox.HeaderText = "";
+			this.colCheckbox.Name = "colCheckbox";
+			this.colCheckbox.ReadOnly = true;
+			// 
+			// colId
+			// 
+			this.colId.DataPropertyName = "Id";
+			this.colId.HeaderText = "Column1";
+			this.colId.Name = "colId";
+			this.colId.ReadOnly = true;
+			this.colId.Visible = false;
+			// 
+			// colName
+			// 
+			this.colName.DataPropertyName = "Name";
+			this.colName.HeaderText = "Skills";
+			this.colName.Name = "colName";
+			this.colName.ReadOnly = true;
+			// 
+			// AddSkills
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(769, 521);
+			this.Controls.Add(this.lblEvent);
+			this.Controls.Add(this.panel2);
 			this.Controls.Add(this.button1);
-			this.Controls.Add(this.dataGridView1);
-			this.Controls.Add(this.lblTotal);
 			this.Controls.Add(this.label4);
-			this.Controls.Add(this.btnSearch);
-			this.Controls.Add(this.comboEvent);
 			this.Controls.Add(this.label3);
 			this.Controls.Add(this.label2);
 			this.Controls.Add(this.panel1);
 			this.Controls.Add(this.statusStrip1);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
 			this.MaximizeBox = false;
-			this.Name = "CompetitionSkillsB";
+			this.Name = "AddSkills";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "My Profile";
 			this.Load += new System.EventHandler(this.MainScreen_Load);
@@ -247,6 +273,7 @@
 			this.panel1.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+			this.panel2.ResumeLayout(false);
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -264,11 +291,14 @@
 		private System.Windows.Forms.Label label2;
 		private System.Windows.Forms.Button btnLogout;
 		private System.Windows.Forms.Label label3;
-		private System.Windows.Forms.ComboBox comboEvent;
-		private System.Windows.Forms.Button btnSearch;
 		private System.Windows.Forms.Label label4;
 		private System.Windows.Forms.Label lblTotal;
 		private System.Windows.Forms.DataGridView dataGridView1;
 		private System.Windows.Forms.Button button1;
+		private System.Windows.Forms.Panel panel2;
+		private System.Windows.Forms.Label lblEvent;
+		private System.Windows.Forms.DataGridViewCheckBoxColumn colCheckbox;
+		private System.Windows.Forms.DataGridViewTextBoxColumn colId;
+		private System.Windows.Forms.DataGridViewTextBoxColumn colName;
 	}
 }

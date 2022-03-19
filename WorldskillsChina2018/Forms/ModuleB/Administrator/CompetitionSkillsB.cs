@@ -30,9 +30,16 @@ namespace WorldskillsChina2018 {
 			DoTime(toolStripStatusTime);
 		}
 
+		List<object> eventIds=new List<object>();
+		object eventId;
+
 		private void MainScreen_Load(object sender, EventArgs e) {
 			DoTime(toolStripStatusTime);
 
+			foreach(var r in Utils.ExecuteReader("SELECT EventId, EventName FROM [Event]")) {
+				eventIds.Add(r["EventId"]);
+				comboEvent.Items.Add(r["EventId"] + " - " + r["EventName"]);
+			}
 		}
 
 		private void btnBack_Click(object sender, EventArgs e) {
@@ -42,6 +49,37 @@ namespace WorldskillsChina2018 {
 		private void btnLogout_Click(object sender, EventArgs e) {
 			Login.LoggingOut = true;
 			Close();
+		}
+
+		DataTable table;
+		private void btnSearch_Click(object sender, EventArgs e) {
+			if (comboEvent.SelectedIndex < 0) {
+				return;
+			}
+			eventId = eventIds[comboEvent.SelectedIndex];
+			UpdateData();
+		}
+
+		void UpdateData() {
+			if (eventId == null) {
+				return;
+			}
+			table = Utils.ExecuteQuery("SELECT SkillsField.FieldName as Field,Skills.SkillsId as [Skills Id],Skills.SkillsName as [Skills Name] FROM Skills,SkillsInEvent,SkillsField WHERE Skills.SkillsId=SkillsInEvent.SkillsId AND SkillsField.FieldId=Skills.FieldId AND SkillsInEvent.EventId=@0", eventId);
+			dataGridView1.DataSource = table;
+			lblTotal.Text = "Total Skills: " + table.Rows.Count;
+		}
+
+		private void button1_Click(object sender, EventArgs e) {
+			if (eventId == null) {
+				return;
+			}
+			var form = new AddSkills(id,eventId);
+			form.ShowDialog();
+			if (Login.LoggingOut) {
+				Close();
+			} else {
+				UpdateData();
+			}
 		}
 	}
 }
