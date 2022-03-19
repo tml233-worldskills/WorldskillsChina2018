@@ -1,5 +1,5 @@
 ﻿namespace WorldskillsChina2018 {
-	partial class AdministratorMenu {
+	partial class CompetitionEvent {
 		/// <summary>
 		/// Required designer variable.
 		/// </summary>
@@ -29,19 +29,23 @@
 			this.timerBottom = new System.Windows.Forms.Timer(this.components);
 			this.panel1 = new System.Windows.Forms.Panel();
 			this.btnLogout = new System.Windows.Forms.Button();
-			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			this.btnBack = new System.Windows.Forms.Button();
 			this.label1 = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
+			this.button1 = new System.Windows.Forms.Button();
 			this.label3 = new System.Windows.Forms.Label();
-			this.panel2 = new System.Windows.Forms.Panel();
-			this.btn1 = new System.Windows.Forms.Button();
-			this.btn0 = new System.Windows.Forms.Button();
-			this.lblName = new System.Windows.Forms.Label();
+			this.inputSearch = new System.Windows.Forms.TextBox();
+			this.btnSearch = new System.Windows.Forms.Button();
+			this.lblTotal = new System.Windows.Forms.Label();
+			this.dataGridView1 = new System.Windows.Forms.DataGridView();
+			this.button3 = new System.Windows.Forms.Button();
+			this.button4 = new System.Windows.Forms.Button();
+			this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			this.statusStrip1.SuspendLayout();
 			this.panel1.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-			this.panel2.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// statusStrip1
@@ -99,16 +103,6 @@
 			this.btnLogout.UseVisualStyleBackColor = true;
 			this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
 			// 
-			// pictureBox1
-			// 
-			this.pictureBox1.Image = global::WorldskillsChina2018.Properties.Resources.logo_color_bg_white;
-			this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-			this.pictureBox1.Name = "pictureBox1";
-			this.pictureBox1.Size = new System.Drawing.Size(79, 66);
-			this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-			this.pictureBox1.TabIndex = 6;
-			this.pictureBox1.TabStop = false;
-			// 
 			// btnBack
 			// 
 			this.btnBack.Font = new System.Drawing.Font("Calibri", 12F);
@@ -137,92 +131,144 @@
 			this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
 			this.label2.Font = new System.Drawing.Font("Calibri", 20F);
-			this.label2.Location = new System.Drawing.Point(0, 93);
+			this.label2.Location = new System.Drawing.Point(0, 69);
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(769, 38);
 			this.label2.TabIndex = 7;
-			this.label2.Text = "Administrator Menu";
+			this.label2.Text = "Competition Event";
 			this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+			// 
+			// button1
+			// 
+			this.button1.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.button1.Location = new System.Drawing.Point(12, 110);
+			this.button1.Name = "button1";
+			this.button1.Size = new System.Drawing.Size(154, 43);
+			this.button1.TabIndex = 8;
+			this.button1.Text = "+  Add an Event";
+			this.button1.UseVisualStyleBackColor = true;
 			// 
 			// label3
 			// 
-			this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-			this.label3.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-			this.label3.Location = new System.Drawing.Point(39, 198);
+			this.label3.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label3.Location = new System.Drawing.Point(422, 120);
 			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(384, 38);
-			this.label3.TabIndex = 8;
-			this.label3.Text = "Competitor Menu";
-			this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+			this.label3.Size = new System.Drawing.Size(100, 23);
+			this.label3.TabIndex = 9;
+			this.label3.Text = "Filter by:";
+			this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
 			// 
-			// panel2
+			// inputSearch
 			// 
-			this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.panel2.Controls.Add(this.btn1);
-			this.panel2.Controls.Add(this.btn0);
-			this.panel2.Controls.Add(this.lblName);
-			this.panel2.Location = new System.Drawing.Point(12, 146);
-			this.panel2.Name = "panel2";
-			this.panel2.Size = new System.Drawing.Size(745, 322);
-			this.panel2.TabIndex = 9;
+			this.inputSearch.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.inputSearch.Location = new System.Drawing.Point(528, 120);
+			this.inputSearch.Name = "inputSearch";
+			this.inputSearch.Size = new System.Drawing.Size(229, 27);
+			this.inputSearch.TabIndex = 10;
 			// 
-			// btn1
+			// btnSearch
 			// 
-			this.btn1.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btn1.Location = new System.Drawing.Point(232, 194);
-			this.btn1.Name = "btn1";
-			this.btn1.Size = new System.Drawing.Size(275, 67);
-			this.btn1.TabIndex = 12;
-			this.btn1.Text = "Competitor Management";
-			this.btn1.UseVisualStyleBackColor = true;
-			this.btn1.Click += new System.EventHandler(this.btn1_Click);
+			this.btnSearch.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnSearch.Location = new System.Drawing.Point(658, 153);
+			this.btnSearch.Name = "btnSearch";
+			this.btnSearch.Size = new System.Drawing.Size(99, 38);
+			this.btnSearch.TabIndex = 11;
+			this.btnSearch.Text = "Search";
+			this.btnSearch.UseVisualStyleBackColor = true;
+			this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
 			// 
-			// btn0
+			// lblTotal
 			// 
-			this.btn0.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btn0.Location = new System.Drawing.Point(232, 121);
-			this.btn0.Name = "btn0";
-			this.btn0.Size = new System.Drawing.Size(275, 67);
-			this.btn0.TabIndex = 11;
-			this.btn0.Text = "Event Management";
-			this.btn0.UseVisualStyleBackColor = true;
-			this.btn0.Click += new System.EventHandler(this.btn0_Click);
+			this.lblTotal.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lblTotal.Location = new System.Drawing.Point(12, 194);
+			this.lblTotal.Name = "lblTotal";
+			this.lblTotal.Size = new System.Drawing.Size(745, 27);
+			this.lblTotal.TabIndex = 12;
+			this.lblTotal.Text = "Total Events: 0";
+			this.lblTotal.TextAlign = System.Drawing.ContentAlignment.TopCenter;
 			// 
-			// lblName
+			// dataGridView1
 			// 
-			this.lblName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-			this.lblName.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lblName.Location = new System.Drawing.Point(3, 9);
-			this.lblName.Name = "lblName";
-			this.lblName.Size = new System.Drawing.Size(737, 71);
-			this.lblName.TabIndex = 10;
-			this.lblName.Text = "Good Morning!\r\nMr./Mrs. Name";
-			this.lblName.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+			this.dataGridView1.AllowUserToAddRows = false;
+			this.dataGridView1.AllowUserToDeleteRows = false;
+			this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+			this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1});
+			this.dataGridView1.Location = new System.Drawing.Point(12, 224);
+			this.dataGridView1.Name = "dataGridView1";
+			this.dataGridView1.ReadOnly = true;
+			this.dataGridView1.RowTemplate.Height = 23;
+			this.dataGridView1.Size = new System.Drawing.Size(745, 215);
+			this.dataGridView1.TabIndex = 13;
 			// 
-			// AdministratorMenu
+			// button3
+			// 
+			this.button3.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.button3.Location = new System.Drawing.Point(591, 445);
+			this.button3.Name = "button3";
+			this.button3.Size = new System.Drawing.Size(166, 38);
+			this.button3.TabIndex = 14;
+			this.button3.Text = "View Registration";
+			this.button3.UseVisualStyleBackColor = true;
+			this.button3.Click += new System.EventHandler(this.button3_Click);
+			// 
+			// button4
+			// 
+			this.button4.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.button4.Location = new System.Drawing.Point(499, 445);
+			this.button4.Name = "button4";
+			this.button4.Size = new System.Drawing.Size(86, 38);
+			this.button4.TabIndex = 15;
+			this.button4.Text = "Edit";
+			this.button4.UseVisualStyleBackColor = true;
+			// 
+			// Column1
+			// 
+			this.Column1.DataPropertyName = "EventId";
+			this.Column1.HeaderText = "Column1";
+			this.Column1.Name = "Column1";
+			this.Column1.ReadOnly = true;
+			this.Column1.Visible = false;
+			// 
+			// pictureBox1
+			// 
+			this.pictureBox1.Image = global::WorldskillsChina2018.Properties.Resources.logo_color_bg_white;
+			this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+			this.pictureBox1.Name = "pictureBox1";
+			this.pictureBox1.Size = new System.Drawing.Size(79, 66);
+			this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+			this.pictureBox1.TabIndex = 6;
+			this.pictureBox1.TabStop = false;
+			// 
+			// CompetitionEvent
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(769, 521);
-			this.Controls.Add(this.panel2);
+			this.Controls.Add(this.button4);
+			this.Controls.Add(this.button3);
+			this.Controls.Add(this.dataGridView1);
+			this.Controls.Add(this.lblTotal);
+			this.Controls.Add(this.btnSearch);
+			this.Controls.Add(this.inputSearch);
 			this.Controls.Add(this.label3);
+			this.Controls.Add(this.button1);
 			this.Controls.Add(this.label2);
 			this.Controls.Add(this.panel1);
 			this.Controls.Add(this.statusStrip1);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
 			this.MaximizeBox = false;
-			this.Name = "AdministratorMenu";
+			this.Name = "CompetitionEvent";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-			this.Text = "Administrator Menu";
+			this.Text = "My Profile";
 			this.Load += new System.EventHandler(this.MainScreen_Load);
 			this.statusStrip1.ResumeLayout(false);
 			this.statusStrip1.PerformLayout();
 			this.panel1.ResumeLayout(false);
 			this.panel1.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-			this.panel2.ResumeLayout(false);
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -239,10 +285,14 @@
 		private System.Windows.Forms.PictureBox pictureBox1;
 		private System.Windows.Forms.Label label2;
 		private System.Windows.Forms.Button btnLogout;
+		private System.Windows.Forms.Button button1;
 		private System.Windows.Forms.Label label3;
-		private System.Windows.Forms.Panel panel2;
-		private System.Windows.Forms.Button btn0;
-		private System.Windows.Forms.Label lblName;
-		private System.Windows.Forms.Button btn1;
+		private System.Windows.Forms.TextBox inputSearch;
+		private System.Windows.Forms.Button btnSearch;
+		private System.Windows.Forms.Label lblTotal;
+		private System.Windows.Forms.DataGridView dataGridView1;
+		private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+		private System.Windows.Forms.Button button3;
+		private System.Windows.Forms.Button button4;
 	}
 }

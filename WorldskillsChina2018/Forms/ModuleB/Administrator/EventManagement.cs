@@ -10,9 +10,9 @@ using System.Runtime.Serialization.Json;
 using System.Windows.Forms;
 
 namespace WorldskillsChina2018 {
-	public partial class AdministratorMenu : Form {
+	public partial class EventManagement : Form {
 		string id;
-		public AdministratorMenu(string id) {
+		public EventManagement(string id) {
 			InitializeComponent();
 			this.id = id;
 		}
@@ -31,22 +31,6 @@ namespace WorldskillsChina2018 {
 
 		private void MainScreen_Load(object sender, EventArgs e) {
 			DoTime(toolStripStatusTime);
-			string time = "Morning";
-			int hour = DateTime.Now.Hour;
-			if (hour >= 6 && hour < 12) {
-				time = "Morning";
-			} else if (hour >= 12 && hour < 18) {
-				time = "Afternoon";
-			} else if (hour >= 18 && hour < 6) {
-				time = "Evening";
-			}
-			string gender = "Mr.";
-			string name = "Null";
-			foreach (var r in Utils.ExecuteReader("SELECT Name,Gender FROM [User] WHERE IdNumber=@0", id)) {
-				gender = (r["Gender"] as string) == "M" ? "Mr." : "Mrs.";
-				name = (r["Name"] as string);
-			}
-			lblName.Text = string.Format("Good {0}!\n{1} {2}", time, gender, name);
 		}
 
 		private void btnBack_Click(object sender, EventArgs e) {
@@ -59,7 +43,7 @@ namespace WorldskillsChina2018 {
 		}
 
 		private void btn0_Click(object sender, EventArgs e) {
-			var form = new EventManagement(id);
+			var form = new CompetitionEvent(id);
 			form.ShowDialog();
 			if (Login.LoggingOut) {
 				Close();
@@ -67,7 +51,7 @@ namespace WorldskillsChina2018 {
 		}
 
 		private void btn1_Click(object sender, EventArgs e) {
-			var form = new EventManagement(id);
+			var form = new CompetitionSkillsB(id);
 			form.ShowDialog();
 			if (Login.LoggingOut) {
 				Close();

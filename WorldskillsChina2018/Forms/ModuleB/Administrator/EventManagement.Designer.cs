@@ -1,5 +1,5 @@
 ﻿namespace WorldskillsChina2018 {
-	partial class AdministratorMenu {
+	partial class EventManagement {
 		/// <summary>
 		/// Required designer variable.
 		/// </summary>
@@ -33,15 +33,11 @@
 			this.btnBack = new System.Windows.Forms.Button();
 			this.label1 = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
-			this.label3 = new System.Windows.Forms.Label();
-			this.panel2 = new System.Windows.Forms.Panel();
 			this.btn1 = new System.Windows.Forms.Button();
 			this.btn0 = new System.Windows.Forms.Button();
-			this.lblName = new System.Windows.Forms.Label();
 			this.statusStrip1.SuspendLayout();
 			this.panel1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-			this.panel2.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// statusStrip1
@@ -137,83 +133,48 @@
 			this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
 			this.label2.Font = new System.Drawing.Font("Calibri", 20F);
-			this.label2.Location = new System.Drawing.Point(0, 93);
+			this.label2.Location = new System.Drawing.Point(0, 105);
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(769, 38);
 			this.label2.TabIndex = 7;
-			this.label2.Text = "Administrator Menu";
+			this.label2.Text = "Event Management";
 			this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-			// 
-			// label3
-			// 
-			this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-			this.label3.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-			this.label3.Location = new System.Drawing.Point(39, 198);
-			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(384, 38);
-			this.label3.TabIndex = 8;
-			this.label3.Text = "Competitor Menu";
-			this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-			// 
-			// panel2
-			// 
-			this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.panel2.Controls.Add(this.btn1);
-			this.panel2.Controls.Add(this.btn0);
-			this.panel2.Controls.Add(this.lblName);
-			this.panel2.Location = new System.Drawing.Point(12, 146);
-			this.panel2.Name = "panel2";
-			this.panel2.Size = new System.Drawing.Size(745, 322);
-			this.panel2.TabIndex = 9;
 			// 
 			// btn1
 			// 
 			this.btn1.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btn1.Location = new System.Drawing.Point(232, 194);
+			this.btn1.Location = new System.Drawing.Point(247, 305);
 			this.btn1.Name = "btn1";
 			this.btn1.Size = new System.Drawing.Size(275, 67);
-			this.btn1.TabIndex = 12;
-			this.btn1.Text = "Competitor Management";
+			this.btn1.TabIndex = 14;
+			this.btn1.Text = "Competition Skills";
 			this.btn1.UseVisualStyleBackColor = true;
 			this.btn1.Click += new System.EventHandler(this.btn1_Click);
 			// 
 			// btn0
 			// 
 			this.btn0.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btn0.Location = new System.Drawing.Point(232, 121);
+			this.btn0.Location = new System.Drawing.Point(247, 214);
 			this.btn0.Name = "btn0";
 			this.btn0.Size = new System.Drawing.Size(275, 67);
-			this.btn0.TabIndex = 11;
-			this.btn0.Text = "Event Management";
+			this.btn0.TabIndex = 13;
+			this.btn0.Text = "Competition Event";
 			this.btn0.UseVisualStyleBackColor = true;
 			this.btn0.Click += new System.EventHandler(this.btn0_Click);
 			// 
-			// lblName
-			// 
-			this.lblName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-			this.lblName.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lblName.Location = new System.Drawing.Point(3, 9);
-			this.lblName.Name = "lblName";
-			this.lblName.Size = new System.Drawing.Size(737, 71);
-			this.lblName.TabIndex = 10;
-			this.lblName.Text = "Good Morning!\r\nMr./Mrs. Name";
-			this.lblName.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-			// 
-			// AdministratorMenu
+			// EventManagement
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(769, 521);
-			this.Controls.Add(this.panel2);
-			this.Controls.Add(this.label3);
+			this.Controls.Add(this.btn1);
+			this.Controls.Add(this.btn0);
 			this.Controls.Add(this.label2);
 			this.Controls.Add(this.panel1);
 			this.Controls.Add(this.statusStrip1);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
 			this.MaximizeBox = false;
-			this.Name = "AdministratorMenu";
+			this.Name = "EventManagement";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Administrator Menu";
 			this.Load += new System.EventHandler(this.MainScreen_Load);
@@ -222,7 +183,6 @@
 			this.panel1.ResumeLayout(false);
 			this.panel1.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-			this.panel2.ResumeLayout(false);
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -239,10 +199,7 @@
 		private System.Windows.Forms.PictureBox pictureBox1;
 		private System.Windows.Forms.Label label2;
 		private System.Windows.Forms.Button btnLogout;
-		private System.Windows.Forms.Label label3;
-		private System.Windows.Forms.Panel panel2;
-		private System.Windows.Forms.Button btn0;
-		private System.Windows.Forms.Label lblName;
 		private System.Windows.Forms.Button btn1;
+		private System.Windows.Forms.Button btn0;
 	}
 }

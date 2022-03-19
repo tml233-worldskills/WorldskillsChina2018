@@ -76,6 +76,30 @@
     <Compile Include="Forms\ModuleB\AdministratorMenu.Designer.cs">
       <DependentUpon>AdministratorMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\ModuleB\Administrator\ViewRegisteration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ModuleB\Administrator\ViewRegisteration.Designer.cs">
+      <DependentUpon>ViewRegisteration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ModuleB\Administrator\CompetitionSkillsB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ModuleB\Administrator\CompetitionSkillsB.Designer.cs">
+      <DependentUpon>CompetitionSkillsB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ModuleB\Administrator\CompetitionEvent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ModuleB\Administrator\CompetitionEvent.Designer.cs">
+      <DependentUpon>CompetitionEvent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ModuleB\Administrator\EventManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ModuleB\Administrator\EventManagement.Designer.cs">
+      <DependentUpon>EventManagement.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\ModuleB\Competitor\MyResults.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -186,6 +210,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ModuleB\AdministratorMenu.resx">
       <DependentUpon>AdministratorMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ModuleB\Administrator\ViewRegisteration.resx">
+      <DependentUpon>ViewRegisteration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ModuleB\Administrator\CompetitionSkillsB.resx">
+      <DependentUpon>CompetitionSkillsB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ModuleB\Administrator\CompetitionEvent.resx">
+      <DependentUpon>CompetitionEvent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ModuleB\Administrator\EventManagement.resx">
+      <DependentUpon>EventManagement.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ModuleB\Competitor\MyResults.resx">
       <DependentUpon>MyResults.cs</DependentUpon>
