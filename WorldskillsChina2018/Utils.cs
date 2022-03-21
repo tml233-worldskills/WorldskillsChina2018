@@ -11,7 +11,7 @@ using System.IO;
 
 namespace WorldskillsChina2018 {
 	public static class Utils {
-		public const bool Debug = true;
+		public const bool Debug = false;
 		public static string ResourcePath => "./Resources/";
 
 		public static string ConnectionString => ConfigurationManager.ConnectionStrings["db"].ConnectionString;
