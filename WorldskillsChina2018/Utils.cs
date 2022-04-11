@@ -15,13 +15,13 @@ namespace WorldskillsChina2018 {
 		public static string ResourcePath => "./Resources/";
 
 		public static string ConnectionString => ConfigurationManager.ConnectionStrings["db"].ConnectionString;
-		public static (SqlConnection, SqlCommand) Prepare(string sql, params object[] args) {
+		public static Tuple<SqlConnection, SqlCommand> Prepare(string sql, params object[] args) {
 			var conn = new SqlConnection(ConnectionString);
 			var cmd = new SqlCommand(sql, conn);
 			for (int i = 0; i < args.Length; i += 1) {
 				cmd.Parameters.AddWithValue("@" + i, args[i]);
 			}
-			return (conn, cmd);
+			return new Tuple<SqlConnection, SqlCommand>(conn, cmd);
 		}
 		public static int ExecuteUpdate(string sql, params object[] args) {
 			var pair = Prepare(sql, args);

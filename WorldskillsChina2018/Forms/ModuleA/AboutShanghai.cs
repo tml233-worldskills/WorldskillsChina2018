@@ -28,13 +28,13 @@ namespace WorldskillsChina2018 {
 		}
 
 
-		List<(DateTime, string)> events = new List<(DateTime, string)>();
+		List<Tuple<DateTime, string>> events = new List<Tuple<DateTime, string>>();
 		private void MainScreen_Load(object sender, EventArgs e) {
 			DoTime(toolStripStatusTime);
 			var lines = File.ReadAllLines(Utils.ResourcePath + "AboutShanghai/Event.csv");
 			for(int i = 1; i < lines.Length; i += 1) {
 				var split = lines[i].Split(',');
-				events.Add((DateTime.Parse(split[0]), split[1]));
+				events.Add(new Tuple<DateTime, string>(DateTime.Parse(split[0]), split[1]));
 			}
 			StringBuilder sb = new StringBuilder();
 			foreach(var item in events.OrderByDescending(o => o.Item1)) {
