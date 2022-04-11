@@ -42,7 +42,7 @@ namespace WorldskillsChina2018 {
 			DoTime(toolStripStatusTime);
 
 			eventId = Utils.ExecuteScalar("SELECT MAX(EventId) FROM Event");
-			avg = (int)Utils.ExecuteScalar("SELECT (SELECT COUNT(IdNumber) FROM Volunteer)/(SELECT COUNT(SkillsId) FROM SkillsInEvent WHERE EventId=@0)", eventId);
+			avg = (int)Utils.ExecuteScalar("SELECT (SELECT COUNT(IdNumber) FROM Volunteer)/(SELECT COUNT(DISTINCT Skills.SkillsId) FROM Skills,SkillsInEvent,Volunteer WHERE Skills.SkillsId=SkillsInEvent.SkillsId AND Volunteer.SkillsId=Skills.SkillsId)");
 
 
 			foreach (var r in Utils.ExecuteReader("SELECT SkillsInEvent.SkillsId as Id,Skills.SkillsName as Name FROM SkillsInEvent,Skills WHERE SkillsInEvent.SkillsId=Skills.SkillsId AND EventId=@0 ORDER BY SkillsInEvent.SkillsId", eventId)) {
