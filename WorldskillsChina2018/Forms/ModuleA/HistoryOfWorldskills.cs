@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -32,6 +33,18 @@ namespace WorldskillsChina2018 {
 
 		private void btnBack_Click(object sender, EventArgs e) {
 			Close();
+		}
+
+		private void pictureBox3_Click(object sender, EventArgs e) {
+			textBox1.Text = File.ReadAllText(Utils.ResourcePath + "HistoryOfWorldskills/A.txt");
+		}
+
+		private void pictureBox4_Click(object sender, EventArgs e) {
+			textBox1.Text = File.ReadAllText(Utils.ResourcePath + "HistoryOfWorldskills/B.txt");
+		}
+
+		private void pictureBox5_Click(object sender, EventArgs e) {
+			textBox1.Text = File.ReadAllText(Utils.ResourcePath + "HistoryOfWorldskills/C.txt");
 		}
 	}
 }

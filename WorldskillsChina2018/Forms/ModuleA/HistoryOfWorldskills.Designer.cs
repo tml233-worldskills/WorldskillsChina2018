@@ -24,7 +24,6 @@
 		/// </summary>
 		private void InitializeComponent() {
 			this.components = new System.ComponentModel.Container();
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HistoryOfWorldskills));
 			this.statusStrip1 = new System.Windows.Forms.StatusStrip();
 			this.toolStripStatusTime = new System.Windows.Forms.ToolStripStatusLabel();
 			this.timerBottom = new System.Windows.Forms.Timer(this.components);
@@ -145,7 +144,6 @@
 			this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
 			this.textBox1.Size = new System.Drawing.Size(459, 359);
 			this.textBox1.TabIndex = 8;
-			this.textBox1.Text = resources.GetString("textBox1.Text");
 			// 
 			// panel2
 			// 
@@ -168,6 +166,7 @@
 			this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
 			this.pictureBox5.TabIndex = 10;
 			this.pictureBox5.TabStop = false;
+			this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
 			// 
 			// pictureBox4
 			// 
@@ -178,6 +177,7 @@
 			this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
 			this.pictureBox4.TabIndex = 9;
 			this.pictureBox4.TabStop = false;
+			this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
 			// 
 			// pictureBox3
 			// 
@@ -188,6 +188,7 @@
 			this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
 			this.pictureBox3.TabIndex = 8;
 			this.pictureBox3.TabStop = false;
+			this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
 			// 
 			// pictureBox2
 			// 
